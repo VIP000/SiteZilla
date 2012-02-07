@@ -121,11 +121,11 @@ switch($index_page[0]) {
 					$regmsg = translate('You have to read and accept the Terms &amp; Conditions.',sz_config('language'));
 				if($regmsg == '') {
 					if(addUser($newuser))
-						sysMsg(translate('Thank you for registering with us. An email with your account details has been sent to you email address.',sz_config('language')));
+						show_msg(translate('Thank you for registering with us. An email with your account details has been sent to you email address.',sz_config('language')));
 					else {
-						sysMsg(translate('There was a problem with the registration process.',sz_config('language')));
+						show_msg(translate('There was a problem with the registration process.',sz_config('language')));
 						if(reportError('Unable to register new user. User email is '.$newuser['email'].', phone is '.$newuser['phone'].', name is '.$newuser['fullnames'])) {
-							sysMsg(translate('The problem has been reported to the website developers. Do not attempt to register your account again, we will send you further instructions shortly.',sz_config('language')));
+							show_msg(translate('The problem has been reported to the website developers. Do not attempt to register your account again, we will send you further instructions shortly.',sz_config('language')));
 						} else {
 							reportErrorManually('33214');
 						}
@@ -134,20 +134,17 @@ switch($index_page[0]) {
 					registerForm($regmsg,$newuser);
 				}
 			} else {
-				$msg = MSG00045;
-				blankRegForm($msg);
+				blankRegForm(translate('Fill in the details below to register.',sz_config('language')));
 			}
 		  } else {
-			$msg = MSG00045;
-			blankRegForm($msg);
+			blankRegForm(translate('Fill in the details below to register.',sz_config('language')));
 		  }
 		}
 	break;
 	case 'register':
 		if(szRegistration()) {
 			if(!isset($_SESSION['userid']))	{
-				$msg = MSG00045;
-				blankRegForm($msg);
+				blankRegForm(translate('Fill in the details below to register.',sz_config('language')));
 			}
 		} else {
 			show_page('closed');
@@ -164,31 +161,28 @@ switch($index_page[0]) {
 				if(isValid($_POST['email'],'email')) {
 				  if(emailExists($_POST['email'])) {
 					if(sendNewPassw($_POST['email']))
-						sysMsg(MSG00046);
+						show_msg(translate('An email has been sent to your email address. Please follow the instructions in the email.',sz_config('language')));
 					else {
-						sysMsg(MSG00047);
+						show_msg(translate('An error has occurred while trying to reset your password.',sz_config('language')));
 						if(reportError('Unable to reset password for'.$_POST['email']))
-							sysMsg(MSG00048);
+							show_msg(translate('The website developers have been notified and you will be contacted shortly.',sz_config('language')));
 						else
 							reportErrorManually('33215');
 					}
 				  } else {
-					$msg = MSG00049;
-				show_form('passreset',$msg);
+					show_form('passreset',translate('Please enter your own email address.',sz_config('language')));
 				  }
 				} else {
-					$msg = MSG00050;
-				show_form('passreset',$msg);
+					show_form('passreset',translate('You have entered an invalid email address. Please try again.',sz_config('language')));
 				}
 			} else {
-					$msg = '';
-				show_form('passreset',$msg);
+				show_form('passreset','');
 			}
 		}
 	break;
 	default:
 		if($nrgic == 'showregmsg')
-			sysMsg(MSG00262);
+			show_msg(translate('Your request has been forwarded. We will notify you as soon as you can register again.',sz_config('language')));
 		show_page('index');
 	break;
 }
