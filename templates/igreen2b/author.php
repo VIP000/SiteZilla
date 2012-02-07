@@ -1,0 +1,1 @@
+<a href="http://www.darjanpanic.com" target="_blank" alt="Darjan Panic" title="Freelance Graphic Artist">Darjan Panic</a> &amp; <a href="http://www.briangreens.com" target="_blank" alt="Brian Green" title="Brian Green">Brian Green</a>

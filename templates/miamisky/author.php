@@ -1,0 +1,1 @@
+<a href="http://www.allbeautydirectory.com" target="_blank" alt="The All Beauty Directory" title="The All Beauty Directory">The All Beauty Directory</a>

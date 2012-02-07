@@ -1,0 +1,1 @@
+<a href="http://www.alltechnologydirectory.com/" title="The All Technology Directory" alt="The All Technology Directory" target="_blank">All Technology</a>

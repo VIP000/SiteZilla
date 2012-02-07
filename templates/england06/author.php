@@ -1,0 +1,1 @@
+<a href="http://www.davereederdesign.com/" title="drd" alt="drd" target="_blank">drd</a>

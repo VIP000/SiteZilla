@@ -1,0 +1,111 @@
+/* England 06, free web template by davereederdesign.com */
+
+body { 
+	margin: 0; 
+	padding: 0; 	
+	font-size: 100%;
+	text-align: center; 
+	background: #6F943F url(images/background2.jpg) repeat-x 50% 0;
+}
+
+
+/* GLOBAL STYLES */
+* {margin: 0; padding: 0; border: 0; font-weight: normal}
+
+
+/* HEADINGS */
+h1, h2, h3, h4 {margin: 0 15px; color: #fff; text-align: left; font-family: Georgia, Georgia, serif}
+/* h1 {color: #fff; line-height: 210px; font-size: 2.0em; letter-spacing: 6px} */
+h1 a:link, h1 a:visited, h1 a:active {color: #fff; text-decoration: none; border: 0;font-size:55px;line-height: 210px;}
+h1 a:hover {border-bottom: 1px solid #fff}
+h1 {font-size: 1.65em; line-height: 1.65em}
+h1, h2, h3, h4 {color: #415210}
+h2 {font-size: 1.65em; line-height: 1.65em}
+h3 {font-size: 1.25em; line-height: 1.45em}
+h4 {font-size: 1.00em; line-height: 1.25em}
+
+
+/* PARAGRAPH TEXT AND LISTS */
+p, ul, ol{font-family: Verdana, Arial, sans-serif; font-size: 0.70em; line-height: 1.55em; margin: 5px 15px 10px 15px; text-align: left; color: #fff}
+#bttmbar p {text-align: center}
+ul {float: left; margin: 0 10px 15px 15px; list-style: none outside}  /* Margins may need adjusting to suit */
+ol {float: left; margin: 0 10px 15px 15px; list-style: decimal inside}  /* Margins may need adjusting to suit */
+ul.links {float: left; margin: 0 10px 15px 0px; list-style: none outside} /* Margins may need adjusting to suit */
+ul.links li { margin-left: 15px; padding-left: 10px; background: url(images/linkarrow.gif) 0% 50% no-repeat}
+
+
+/* LINKS */
+a:link, a:active, a:visited {color: #fff; text-decoration: none; border-bottom: 1px solid #415210}
+a:hover {color: #fff; text-decoration: none; border-bottom: none}
+	
+
+/* OTHER */
+acronym {cursor: help; border-bottom: 1px solid #486010}
+strong {font-weight: bold}
+span.special {color: #415210}  /* Use to highlight special text */
+p.updated {font-size: 0.55em; color: #E9C80F; line-height: 0.55em}
+
+
+/* MAINNAV */
+ul#nav {font-size: 0.80em; margin: 0 0 15px 0; width: 100%; list-style: none outside}
+ul#nav li {line-height: 35px; margin-bottom: 3px}
+ul#nav li a {display: block; height: 35px; border: 0; padding-left: 33px; margin-left: 10px; background: url(images/button.gif) 0% 0% no-repeat }
+ul#nav li a:hover, ul#nav li a.current {border: 0; background: url(images/button.gif) 0% 100% no-repeat}
+
+
+/* KEY LAYOUT DIVS */
+#hdr {
+	margin: 0;
+	width: 770px;
+	height: 225px;
+	background: #0593E7 url(images/background.jpg) 50% 0 no-repeat;
+}
+
+#container {  /* all divs are contained in this div and it is positioned centrally */
+	margin: 0 auto;  /* positions div centrally */
+	width: 770px; /* Suits an 800x600 page, allowing for scrollbar */
+	background: transparent;
+	overflow: visible;
+}
+
+#lftcol {  /* left column containing content */
+	float: left;
+	width: 570px;
+	background: transparent;
+	padding-bottom: 50px; /* Adds a nice bit of space */
+}
+
+#rgtcol {  /* rightcolumn containing nav */
+	float: right;
+	width: 195px;
+	background: transparent;
+}
+
+#bttmbar {  /* bottom bar for copyright etc */
+	float: left;
+	width: 570px;
+	height: 50px;
+	background: transparent
+}
+
+/* OPTIONAL LAYOUT DIVS */
+.insetboxlarge {  /* Full width of lftcol */
+	float: left;
+	margin: 5px;
+	padding: 10px 0; /* top and bottom padding */
+	width: 556px; /* width of lftcol div minus 10px for left and right margins and a little extra to line up width insetboxsmall */
+	background: #739C3C;
+	border: 1px solid #698B3E;
+}
+
+.insetboxsmall {  /* Use 2 of these together for 2 rows */
+	float: left;
+	margin: 5px;
+	padding: 10px 0; /* top and bottom padding */
+	width: 272px; /* half of the lftcol div minus 10px for left and right margins */
+	background: #739C3C;
+	border: 1px solid #698B3E;
+}
+
+
+

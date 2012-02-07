@@ -1,0 +1,151 @@
+body {
+	font-family: Bitstream Vera Sans, Arial, sans-serif;
+	color:white;
+	margin:0;
+	padding:0;
+	background-color: black;
+}
+
+a:link {
+	color:grey;
+	text-decoration:none;
+}
+a:hover {
+	border-bottom: 1px white dotted;
+}
+
+blockquote {
+	margin-left:3em;
+	font-style:italic;
+}
+
+#header {
+	background-image: url('images/header.jpg');
+	background-repeat: no-repeat;
+	height:171px;
+	margin:0;
+	padding:0;
+	margin-top:-20px;
+}
+#header h2 a{
+	text-decoration:none;
+	color:#FFFFFF;
+	margin-left:120px;
+	font-size:65px;
+	font-weight:bold;
+}
+
+#links {
+	float:right;
+	margin-top:5px;
+	margin-right:10px;
+}
+
+#logo {
+	margin-top:20px;
+	margin-left:130px;
+}
+
+#slogan {
+	font-style:italic;
+	float:right;
+	margin-right:10px;
+	margin-top: -10px;
+	font-size:80%;
+}
+
+#sidebar {
+	float:left;
+	width:160px;
+}
+	
+#nav {
+	background-color:#151a2e;
+	color: white;
+	margin-bottom:40px;	
+}
+	
+#nav li {
+	margin-left:-3em; 
+	text-align:center;
+	padding:0; 
+	display:block; 
+	border-bottom:1px solid black; 
+}
+	
+#nav a:link {
+	 display:block; 
+	 margin:0; 
+	 text-decoration:none; 
+	 color:white; 
+	 margin:0; 
+	 padding:0.5em; 
+}
+	
+#nav a:hover {
+	 display:block; 
+	 margin:0; 
+	 text-decoration:none; 
+	 color:#666666; 
+	 margin:0; 
+	 padding:0.5em; 
+	 background-color:black; 
+	border:none;
+}
+	
+#nav a:active {
+	display:block; 
+	 margin:0; 
+	 text-decoration:none; 
+	 color:white; 
+	 margin:0; 
+	 padding:0.5em; 
+}
+
+#digg {
+	color:white;
+	background: #151a2e;
+	padding-left: 10px;
+	padding-top: 1px;
+	padding-right: 3px;
+	padding-bottom: 3px;
+	font-size: 80%;
+	position: relative;
+}
+
+#digg ul {
+	margin-left: -30px;
+	list-style-type: square;
+}
+
+#digg h4 {
+	font-size:80%;
+	padding:0;
+}
+
+#digg a:link {
+	color: gray;
+	text-decoration: none;
+}
+
+#digg a:visited {
+	color:#151a2e ;
+	text-decoration: none;
+}
+
+#content {
+	background: #151a2e;
+	margin-left:180px;
+	margin-right:20px;
+	padding:0.1em 1em 1em 1em;
+}
+
+#content p {
+	margin-left:2em;
+}
+
+#footer {
+	font-family:Andale Mono, Arial, sans-serif;
+	font-size:12px;
+	text-align:center;
+}

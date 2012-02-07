@@ -1,0 +1,149 @@
+/* CSS Document - Author: Unnikrishnan */
+
+body
+{
+	font-size: 11px;
+	font-family: Verdana, Arial, SunSans-Regular, Sans-Serif;
+	margin: 0px;	
+	padding-left:50%;
+	background: #f4f4f4 url(images/bg.gif) center repeat-y;
+}
+
+a {text-decoration: none; color: #f00000;}
+a:hover {text-decoration: underline; color: #fff;}
+#topbanner
+{
+        background-color: #000000;
+        height: 45px;
+}
+#container
+{
+	width: 700px;
+	margin-left: -350px;
+}
+
+#topheader
+{
+	background-color: #A374A3;
+        background: url(images/banner.gif); 
+	height: 90px;
+}
+
+#title
+{
+    font-size: 24px;
+    color: #f00000;
+    font-family: verdana;
+    margin: 5px;
+    text-align:center;
+}
+
+#navcontainer
+{
+	background-color: #000000;
+	width:700px;
+}
+
+#navcontainer p
+{
+	background-color: #000000;
+	width:700px;
+}
+
+.navitem
+{
+	background-color: #000000;
+	padding: 5px;
+	text-decoration:none;
+	font-weight:bold;
+	text-align:center;
+	color: #fff;
+	width: 129px;
+	margin-top:1px;
+	margin-right:1px;
+        margin-bottom: 1px;
+	float:left;
+}
+
+
+.navitemlast
+{
+	background-color: #000000;
+	padding: 5px;
+	text-decoration:none;
+	font-weight:bold;
+	text-align:center;
+	color: #fff;
+	width: 130px;
+	margin-top:1px;
+	margin-right:0px;
+        margin-bottom: 1px;
+	float:left;
+}
+
+
+#main
+{
+	padding:5px;
+	width: 688px;
+	text-align:justify;
+	color:#000000;
+	line-height: 1.6em;
+}
+#linkdes
+{
+        color: #f31f60;
+}
+
+#sidebar
+{
+	background-color: #000000;
+        width:197px;
+	border:1px solid #f00000;
+	float:left;
+	margin-top:20px;
+	margin-right: 10px;
+	margin-left: 0px;
+        margin-bottom: 10px;
+	padding: 3px;
+	text-align:left;
+	clear:both;
+}
+
+h1
+{
+	font-family:"Century Gothic", "Trebuchet MS", "Arial Narrow", Arial, sans-serif;
+        text-transform:uppercase;
+        font-size:20px;
+	font-weight:normal;
+        color: #f00000;
+      	padding-top: 5px;
+}
+
+.headertext1
+{
+	background-color: #f00000;
+        font-size:18px;
+	color: #000000;
+}
+.headertext2
+{
+	font-size:10px;
+	font-weight:bold;
+}
+
+#footer
+{
+	background-color:#000000;
+	color: #f00000;
+	text-align:center;
+	vertical-align:middle;
+	height: 20px;
+	padding-top:5px;
+	clear:both;
+}
+
+img
+{
+	border: 1px solid #fff;
+}

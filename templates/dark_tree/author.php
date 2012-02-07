@@ -1,0 +1,1 @@
+<a href="http://jole.ahtr.net" title="jolephoto" alt="jolephoto" target="_blank">jolephoto</a>

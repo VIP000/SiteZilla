@@ -1,0 +1,205 @@
+/* CSS Document by Dieter Schneider 2006 */
+
+* {margin: 0;
+   padding: 0;
+}
+
+html {
+	height: 100%;
+	font-size:100.01%;
+}
+
+body {
+	height: 100%;
+	font-size:1em;
+	background-image: url(images/body_bg.jpg);
+	background-repeat: repeat-y;
+	background-color: #e4d9be;
+	background-position: center;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#container {
+	width: 789px;
+	margin: 0px auto;
+	background-color: #f6eacf;
+	font-size:.9em;
+	background-image: url(images/container.jpg);
+	background-repeat: repeat-y;
+}
+
+#header {
+	height: 113px;
+	background-image: url(images/header.jpg);
+	background-repeat: no-repeat;
+}
+
+#header a {
+	text-decoration: none;
+	color: #FFFFFF;
+	text-align:right;
+	margin-right: -50px;
+}
+
+#subheader {
+	height: 71px;
+	clear: both;
+	background-image: url(images/sub_header.jpg);
+	background-repeat: no-repeat;
+}
+
+#content {
+/* 	margin-right: 202px; */
+	background-color: #d1ba84;
+	padding: 10px;
+}
+
+#right {
+	width: 168px;
+	float: right;
+	clear: both;
+	background-color: #c5ac71;
+	padding-top: 3px;
+	font-size: 0.8em;
+}
+
+#footer {
+	clear: both;
+	background-image: url(images/footer.jpg);
+	background-repeat: no-repeat;
+	height: 21px;
+	font-size: 0.7em;
+	padding-top: 10px;
+	padding-left: 20px;
+	text-align: center;
+}
+
+#footerNyheter { padding-left:250px;
+                 height: 21px; 
+                 font-size:.7em;
+				 clear: both;
+				 background-image: url(images/footer.jpg);
+	             background-repeat: no-repeat;
+				 padding-top: 10px;
+				 padding-bottom: 10px;
+}
+
+/*********************************************  linkbar start **************************************/
+
+ #navcontainer ul
+{
+	font-size: small;
+	background-image: url(images/linkbar_bg.jpg);
+	height: 37px;
+}
+
+#navcontainer ul li { display: inline; }
+
+#navcontainer ul li a
+{
+	color: #FFFFFF;
+	text-decoration: none;
+	float: left;
+	margin-left: 20px;
+	padding-top: 8px;
+}
+
+#navcontainer ul li a:hover
+{
+	color: #2a4d73;
+	background-image: url(images/hover.jpg);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	padding-bottom: 10px;
+}
+
+/********************************************   linkbar end ***********************************/
+
+
+/********************************************    linkpanel start************************************/
+
+.navcontainer {
+	text-decoration: none;
+}
+
+.navcontainer ul
+{
+	margin-left: 0px;
+	padding-left: 0px;
+	list-style-type: none;
+	background-color: #D3D582;
+}
+
+.navcontainer a
+{
+	display: block;
+	padding: 4px 0 4px 10px;
+	width: 158px;
+	border-bottom: 1px solid #7C7C3C;
+	background-image: url(images/linkpanel.jpg);
+	background-repeat: no-repeat;
+	color: #000000;
+	text-decoration: none;
+}
+
+.navcontainer a:link,
+{
+color: #000000;
+text-decoration: none;
+}
+
+.navcontainer a:hover
+{
+	color: #fff;
+	background-image: url(images/linkpanel_hover.jpg);
+	background-repeat: no-repeat;
+	background-color: #FFFFFF;
+}
+
+/************************************************* linkpanel end **********************************/
+
+h1 {
+	padding-top: 62px;
+	font-size: 2em;
+	color: #FFFFFF;
+	text-align: right;
+	margin-right: 67px;
+	font-style: italic;
+}
+
+h2 {
+	background-image: url(images/h2.jpg);
+	background-repeat: no-repeat;
+	font-size: 1em;
+	height: 39px;
+	padding-top: 20px;
+	padding-left: 40px;
+	clear: left;
+	color: #FBE09D;
+} 
+
+h3 {
+	font-size: 1em;
+	background-color: #785012;
+	padding-left: 13px;
+	color: #FFFFFF;
+	padding-top: 5px;
+	padding-bottom: 2px;
+	margin-top: 15px;
+	background-repeat: no-repeat;
+	height: 18px;
+}
+
+p {
+   margin: 7px;
+} 
+
+ul.generell {
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	font-size: 0.9em;
+	color: #CC0000;
+	list-style-image: url(images/arrow.gif);
+} 

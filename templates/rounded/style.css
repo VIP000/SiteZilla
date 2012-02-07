@@ -1,0 +1,76 @@
+ 
+body {
+    background: url("images/back.png") repeat-x fixed center top #79AEFF;
+    margin: 0;
+    padding: 0;
+}
+#wrapper {
+    margin: 0 auto;
+    padding: 0;
+    text-align: left;
+    width: 800px;
+}
+#top {
+    background: url("images/bgtop.png") no-repeat scroll center top transparent;
+    height: 78px;
+    width: 800px;
+}
+#content {
+    background: url("images/bgmiddle.png") repeat-y scroll center center transparent;
+    min-height: 350px;
+    padding: 0 20px 50px;
+    width: 760px;
+}
+#header {
+    background: url("images/header.png") no-repeat scroll center top transparent;
+    height: 166px;
+    margin: 0 0 10px;
+    width: 760px;
+}
+#menu {
+    float: left;
+/*     height: 80%; */
+    margin: 0;
+    text-align: left;
+    width: 200px;
+}
+#menu li a {
+    height: 27px;
+    text-align: left;
+    text-decoration: none;
+    voice-family: inherit;
+}
+#menu li a:link, #menu li a:visited {
+    background: url("images/off.png") repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+    display: block;
+    height: 27px;
+    padding: 8px 0 0 10px;
+    text-align: left;
+}
+#menu li a:hover {
+    background: url("images/on.png") repeat scroll 0 0 transparent;
+    color: #0A2441;
+    height: 27px;
+    padding: 8px 0 0 10px;
+    text-align: left;
+}
+ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+#stuff {
+    margin: 0 0 0 210px;
+    width: 525px;
+}
+img {
+    border: medium none;
+}
+#bottom {
+    background: url("images/bgbottom.png") no-repeat scroll center bottom transparent;
+    height: 78px;
+    text-align: center;
+    width: 800px;
+}

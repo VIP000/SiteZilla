@@ -1,0 +1,133 @@
+/* CSS for FireFox */
+html,body {
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	background-color: #666666;
+}
+.container {
+	width: 800px;
+	margin: 0 auto;
+}
+:link img {
+  border: none;
+}
+
+.header1 {
+	width: 679px;
+	height: 15px;
+	background: url(images/header1.jpg);
+	font-family: Verdana;
+	color: #FFFFFF;
+	font-size: 11px;
+	text-align: right;
+	padding: 7px 61px 3px 60px;
+	cursor: default;
+}
+.header1 a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.header1 a:hover {
+	text-decoration: underline;
+}
+
+.header2 {
+	width: 675px;
+	height: 25px;
+	background: url(images/header2.png) bottom left repeat-x;
+	font-family: Book Antiqua, Times New Roman;
+	color: #666666;
+	font-size: 50px;
+	text-align: left;
+	padding: 30px 50px 50px 95px;
+	cursor: default;
+}
+
+.header2 a{
+	text-decoration:none;
+	font-family: Book Antiqua, Times New Roman;
+	color: #666666;
+	font-size: 50px;
+	text-align: left;
+	padding: 30px 50px 50px 95px;
+	cursor: default;
+}
+.content {
+	min-height: 350px;
+	background: url(images/background.jpg);
+	color: #666666;
+	padding: 5px 80px 0px 80px;
+	text-align: left;
+}
+.content h1,h2,h3,h4,h5,h6 {
+	font-family: Times New Roman;
+	font-size: 24px;
+	margin: 0px;
+	font-weight: normal;
+	cursor: default;
+}
+.content p {
+	font-family: Verdana;
+	font-size: 12px;
+	margin: 0px;
+	padding:5px;
+	cursor: default;
+}
+.content a {
+	color: #666666;
+	text-decoration: underline;
+}
+.content a:hover {
+	text-decoration: none;
+}
+.quote {
+	min-height: 30px;
+	width: 460px;
+	background: url(images/quote.jpg) #FFFFFF;
+	background-repeat: no-repeat;
+	border-left: 1px solid #999999;
+	margin: 10px 180px 2px 130px;
+	font-family: Verdana;
+	font-size: 12px;
+	text-align: left;
+	padding: 3px 0px 4px 6px;
+	font-style: italic;
+	cursor: default;
+}
+.top {
+	width: 540px;
+	border-top: 1px solid #CCCCCC;
+	margin: 10px 180px 0px 80px;
+	font-family: Verdana;
+	font-size: 12px;
+}
+.top a {
+	color: #CCCCCC;
+	text-decoration: none;
+}
+.top a:hover {
+	text-decoration: none;
+}
+.bottom {
+	height: 20px;
+	background: url(images/bottom.jpg);
+	background-repeat: no-repeat;
+}
+.footer {
+	font-family: Verdana;
+	font-size: 10px;
+	color: #FFFFFF;
+	cursor: default;
+	text-align: center;
+}
+.footer a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.footer a:hover {
+	text-decoration: underline;
+}
+
+/* GrayTint is made by Michiel Hennink
+michiel.hennink AT gmail DOT com */

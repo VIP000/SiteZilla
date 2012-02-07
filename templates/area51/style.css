@@ -1,0 +1,385 @@
+.container {
+	text-align: left;
+	width: 100%;
+/* 	position: relative; */
+} 
+
+.box {
+	background-color: #ffffff;
+	text-align: left;
+	width: 616px;
+	position: relative;
+	margin: auto;
+}
+
+img {
+	border: 0;
+}
+
+h1 {
+	margin-right: 10px;
+	margin-bottom: 1em;
+	margin-left: 10px;
+	margin-top: 5px;
+	font-family: arial, verdana, helvetica, sans-serif;
+	letter-spacing: 1px;
+	border-bottom-style: dotted;
+	padding-bottom: 5px;
+	border-width: thin; 
+	color: #FFDD00;
+	font-size: 14px;
+}
+
+h3 { 
+	margin: 0; 
+	padding: 0;
+}
+
+/* ----- Logo Place ----- */
+#top { 
+	width: 616px; 
+	height: 60px; 
+	text-decoration:none;
+	color: #000000; 
+	padding-top: 10px;
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 50px;
+	text-align: left;
+	
+}
+#top a { 
+	text-decoration:none;
+	color: #000000; 
+	padding-top: 10px;
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 50px;
+	text-align: left;
+}
+/* ----- Beginn of Areas ----- */
+/* ----- Main Content ----- */
+#content {
+	width: 480px;
+	background: #000000 url(images/c_bottom.jpg) no-repeat bottom center;
+	color: #ffffff;
+	padding-bottom: 5px; 
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 12px;
+	position: relative;
+	float: left;
+	line-height: 16px;
+}
+
+#content a {
+	color: #BBA200;
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 12px;
+	font-style: italic;
+}
+
+#content a:active, a:link, a:visited {
+	color: #BBA200;
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 10px;
+	font-style: italic;
+	text-decoration: none;
+}
+
+#content a:hover {
+	text-decoration: underline;
+}
+
+#content h3 {
+	width: 480px;
+	height: 8px;
+	background: transparent url(images/c_top.jpg) no-repeat center left;
+	display: block;
+}
+
+#content p {
+	margin-right: 1em;
+	margin-bottom: 1em;
+	margin-left: 1em;
+	margin-top: 1em;
+}
+
+#content h3 span {
+	display: none; }
+
+/* ----- Rightbar ----- */
+#rb {
+	width: 120px;
+	background: #000000 url(images/cr_bottom.jpg) no-repeat bottom center;
+	color: #ffffff;
+	padding-bottom: 10px;
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+	position: relative;
+	float: right;
+}
+
+#rb a {
+	color: #BBA200;
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 12px;
+}
+
+#rb a:active, a:link, a:visited {
+	color: #BBA200;
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+#rb a:hover {
+	text-decoration: underline;
+}
+
+#rb h3 {
+	width: 120px;
+	height: 8px;
+	background: transparent url(images/cr_top.jpg) no-repeat center left;
+	display: block; }
+
+#rb h3 span {
+	display: none; }
+
+#rb ul {
+	list-style-type: none;
+	margin-right: 5px;
+	margin-bottom: 1em;
+	margin-left: -28px; 
+	padding-left: 28px; 
+	padding-top: 1px;
+	line-height: 14px;
+}
+
+#rb li {
+	list-style-image: url(images/bullet.jpg);
+	list-style-position: inside;
+	margin-right: 1px;
+	margin-bottom: .5em;
+	margin-left: 1px;
+	margin-top: 1px; 
+	padding-left: 5px;
+	line-height: 12px; }
+
+/* ----- Navigationbar ----- */
+#nav {
+	width: 616px;
+	height: 60px;
+	background: transparent url(images/m_bottom.jpg) no-repeat center left;
+	margin-top: 20px;
+}
+
+#nav h3 {
+	width: 616px;
+	height: 10px;
+	background: transparent url(images/m_top.jpg) no-repeat center left;
+	display: block; }
+
+#nav h3 span {
+	display: none; }
+/* ----- End of Areas ----- */
+
+/* ----- Beginn of Nav-Buttons ----- */
+/* ---------- Button 1 ---------- */
+#b1 {
+	width: 128px;
+	background-color: #FFDD00;
+	color: #FFFFFF;
+	margin-left: 0px;
+	position: absolute;
+	text-align: center;
+	font-size: 12px;
+}
+
+/* ---------- Button 2 ---------- */
+#b2 {
+	width: 120px;
+	background-color: #DDBF00;
+	color: #FFFFFF;
+	margin-left: 128px;
+	position: absolute;
+	text-align: center;
+	font-size: 12px;
+}
+
+/* ---------- Button 3 ---------- */
+#b3 {
+	width: 120px;
+	background-color: #BBA200;
+	color: #FFFFFF;
+	margin-left: 248px;
+	position: absolute;
+	text-align: center;
+	font-size: 12px;
+}
+
+/* ---------- Button 4 ---------- */
+#b4 {
+	width: 120px;
+	background-color: #998400;
+	color: #FFFFFF;
+	margin-left: 368px;
+	position: absolute;
+	text-align: center;
+	font-size: 12px;
+}
+
+/* ---------- Button 5 ---------- */
+
+#b5 {
+	width: 128px;
+	background-color: #776700;
+	color: #FFFFFF;
+	margin-left: 488px;
+	position: absolute;
+	text-align: center;
+	font-size: 12px;
+}
+
+/* ----- End of Nav-Buttons ----- */
+
+/* ----- Beginn of Nav-Buttons Hover effects ----- */
+/* ---------- Button 1 Hover ---------- */
+#b1 a {
+	color: #FFFFFF;
+  display: block;
+  font-size: 12px;
+}
+
+#b1 a:active, a:link, a:visited {
+	color: #FFFFFF;
+	font-family: arial, verdana, helvetica, sans-serif;
+	text-decoration: none;
+}
+
+#b1 a:hover {
+	width: 128px;
+	background-color: #ffffff;
+	color: #000000;
+	font-family: arial, verdana, helvetica, sans-serif;  
+	display: block;
+}
+
+/* ---------- Button 2 Hover ---------- */
+#b2 a {
+	color: #FFFFFF;
+	display: block;
+	font-size: 12px;
+}
+
+#b2 a:active, a:link, a:visited {
+	color: #FFFFFF;
+	font-family: arial, verdana, helvetica, sans-serif;
+	text-decoration: none;
+}
+
+#b2 a:hover {
+	width: 120px;
+	background-color: #FFFFFF;
+	color: #000000;
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 12px;
+}
+
+/* ---------- Button 3 Hover ---------- */
+#b3 a {
+	color: #FFFFFF;
+	display: block;
+	font-size:12px;
+}
+
+#b3 a:active, a:link, a:visited {
+	color: #FFFFFF;
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+#b3 a:hover {
+	width: 120px;
+	background-color: #FFFFFF;
+	color: #000000;
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 12px; }
+
+/* ---------- Button 4 Hover ---------- */
+#b4 a {
+	color: #FFFFFF;
+	display: block;
+	font-size: 12px;
+}
+
+#b4 a:active, a:link, a:visited {
+	color: #FFFFFF;
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+#b4 a:hover {
+	width: 120px;
+	background-color: #FFFFFF;
+	color: #000000;
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 12px;
+}
+
+/* ---------- Button 5 Hover ---------- */
+
+#b5 a {
+	color: #FFFFFF;
+	display: block;
+	font-size: 12px;
+}
+
+#b5 a:active, a:link, a:visited {
+	color: #FFFFFF;
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+#b5 a:hover {
+	width: 128px;
+	background-color: #ffffff;
+	color: #000000;
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 12px;
+}
+/* ----- End of Nav-Buttons Hover effects ----- */
+
+/* ----- Beginn of Footer ----- */
+#footer {
+	width: 472px;
+	height: 20px;
+	background-color: #ffffff;
+	font-size: 12px;
+	text-align: center;
+	clear: both;
+	padding-top: 5px;
+	padding-right: 8px;
+	position: relative;
+	float: left;
+}
+
+#footer a {
+	color: #BBA200;
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 12px;
+}
+
+#footer a:active, a:link, a:visited {
+	color: #BBA200;
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+#footer a:hover {
+	color: #998400;
+}
+
+/* ----- End of Footer ----- */

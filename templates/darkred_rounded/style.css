@@ -1,0 +1,122 @@
+body {
+	background:white url(images/Background.jpg);
+}
+#Container {
+	margin-left:auto;
+	margin-right:auto;
+	width:800px;
+}
+#Header {
+	font-family:helvetica, arial;
+	font-size:24px;
+	background:white;
+	border-left:3px solid #990000;
+	border-right:3px solid #990000;
+	border:3px solid #990000;
+	padding:5px;
+	text-align:center;
+}
+#Header a {
+	font-family:helvetica, arial;
+	font-size:24px;
+	background:white;
+	text-decoration:none;
+	color: #000000;
+}
+#Header img {
+	float:right;
+	margin-top:-25px;
+	margin-right:5px;
+	border:3px double black;
+}
+#Nav {
+	font-family:helvetica, arial;
+	font-size:16px;
+	border-left:3px solid #990000;
+	border-right:3px solid #990000;
+	background:#990000;
+	padding:3px;
+}
+#Nav a {
+	margin-left:15px;
+	background:white url(images/ButtonOff.gif) repeat-x;
+	color:black;
+	text-decoration:none;
+	border:1px solid black;
+	padding:1px;
+}
+#Nav a:hover {
+	background:silver url(images/ButtonOn.gif) repeat-x;
+	color:#990000;
+}
+#Body {
+	font-family:helvetica, arial;
+	background:white;
+	padding:5px;
+	border:3px solid #990000;
+}
+#Body a {
+	color:#990000;
+}
+#Body a:hover {
+	color:red;
+	text-decoration:none;
+}
+#Body table {
+	width:100%;
+}
+#Body td {
+	width:33%;
+	text-align:center;
+	vertical-align:top;
+	padding:3px;
+}
+#Body img {
+	height:150px;
+	border:1px solid black;
+}
+#FootNav {
+	font-family:helvetica, arial;
+	font-size:12px;
+	background:white;
+	padding:5px;
+	border-left:3px solid #990000;
+	border-right:3px solid #990000;
+	text-align:right;
+}
+#FootNav a {
+	color:black;
+	text-decoration:none;
+}
+#FootNav a:hover {
+	color:#990000;
+}
+#WStuff {
+	float:left;
+	margin-top:-19px;
+	margin-left:5px;
+}
+#Footer {
+	font-family:helvetica, arial;
+	font-size:12px;
+	background:#990000;
+	color:white;
+	text-align:center;
+	padding:3px;
+}
+#Footer a {
+	color:white;
+	text-decoration:none;
+}
+#Footer a:hover {
+	color:silver;
+}
+
+#topimg {
+	background-image: url(images/Top.gif);
+	height:50px;
+}
+#bottomimg {
+	background-image: url(images/Bottom.gif);
+	height:50px;
+}

@@ -1,0 +1,148 @@
+A, BODY, FORM, LI, P, PRE, SPAN, UL {
+	margin: 0px;
+	padding: 0px;
+}
+BODY {
+	background-color: #eeeeee;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+
+INPUT, SELECT {
+	font-size: 12px;
+}
+
+PRE {
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+#body {
+	background: white;
+	border-left: 2px solid #aaaaaa;
+	border-right: 2px solid #aaaaaa;
+	width: 700px;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+#head {
+	background: transparent url("images/agoo_logo.gif") no-repeat left top;
+	text-align: left;
+	padding: 40px 0 0 315px;
+	height: 100px;
+}
+#head h1 a{
+	color: #444444;
+	font-size: 32px;
+	text-decoration: none;
+	padding: 0;
+}
+
+#menu {
+	background-color: #666666;
+	font-size: 12px;
+}
+#menu a {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 0 10px 0 10px;
+}
+#menu a:hover {
+	background-color: white;
+	color: #666666;
+}
+
+#content {
+	min-height: 250px;
+	text-align: left;
+}
+#content .ajax {
+	color: #dd2222;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+#foot {
+	color: #aaaaaa;
+	font-size: 10px;
+}
+
+.section {
+	border-bottom: 1px solid #dddddd;
+	color: #444444;
+	font-size: 14px;
+	margin-top: 10px;
+	padding-bottom: 10px;
+}
+.section A {
+	color: #664444;
+}
+.section A:hover {
+	color: #aa2222;
+	text-decoration: none;
+}
+.section CODE {
+	color: black;
+	background-color: #f2ebdc;
+	font-size: 12px;
+}
+.section H1 {
+	font-size: 20px;
+	margin: 0 0 0 20px;
+}
+.section H2 {
+	font-size: 16px;
+	margin-top: 10px;
+}
+.section LI {
+	margin: 0 0 0 20px;
+}
+.section PRE {
+	color: black;
+	background-color: #f2ebdc;
+	font-size: 12px;
+	margin: 5px 0 10px 0;
+	border-left: 1px solid #aaa499;
+	margin-left: 10px;
+	padding-left: 10px;
+	width: 500px;
+}
+
+.section2 {
+	border-left: 4px solid #dddddd;
+	text-align: left;
+	margin: 20px 0 0 20px;
+	padding-left: 5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0px;
+	padding: 5px;
+}
+
+h1{
+  	font-size: 26px;
+}
+
+h2{
+  	font-size: 24px;
+}
+
+h3{
+  	font-size: 22px;
+}
+
+h4{
+  	font-size: 20px;
+}
+
+h5{
+  	font-size: 18px;
+}
+
+h6{
+  	font-size: 16px;
+}
+  

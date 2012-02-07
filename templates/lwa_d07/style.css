@@ -1,0 +1,101 @@
+BODY {
+	background: white url(images/bodyBk.jpg) top center repeat-x;
+	font-family: sans-serif;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+}
+H1, H2, H3, LI, P, SPAN, UL {
+	margin: 0px;
+	padding: 0px;
+}
+
+.section {
+	color: #444444;
+	font-size: 14px;
+	padding: 20px;
+}
+.section A {
+	color: blue;
+}
+.section A:hover {
+	color: black;
+	text-decoration: none;
+}
+.section H1 {
+	color: #666666;
+	background: white url(images/h1Bk.gif) bottom center repeat-x;
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+
+
+#page {
+	width: 600px;
+	margin: 0 auto;
+}
+
+#header H1 {
+	background: black url(images/headerBk.jpg) top center no-repeat;
+	width: 600px;
+	height: 100px;
+}
+#header H2 {
+	background-color: black;
+	color: white;
+	font-size: 18px;
+	text-align: center;
+	padding-bottom: 2px;
+}
+#header H2 a{
+	text-decoration:none;
+	color: white;
+	font-size: 18px;
+	text-align: center;
+	padding-bottom: 2px;
+}
+
+#content {
+	background-color: white;
+	text-align: left;
+}
+
+#sitemap UL {
+	list-style-type: none;
+	font-size: 16px;
+	margin-left: 40px;
+}
+#sitemap LI {
+	list-style-image: url(images/listStyle.gif);
+	padding: 1px;
+}
+#sitemap LI A {
+	text-decoration: none;
+}
+#sitemap LI A:hover {
+	text-decoration: line-through;
+}
+#sitemap LI.folder {
+	list-style-image: none;
+}
+#sitemap LI.folder SPAN {
+	background-color: #6666ff;
+	color: white;
+	font-weight: bold;
+	padding: 0 6px 0 6px;
+}
+
+#footer {
+	background-color: white;
+	height:50px;
+	text-align: center;
+	color:grey;
+	font-size:11px;
+	padding-top:15px;
+	border-top: 1px dotted grey;
+}
+
+#footer a{
+	color:grey;
+	text-decoration:none;
+}

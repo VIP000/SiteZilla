@@ -1,0 +1,1 @@
+<a href="http://virtualfunction.net" target="_blank" alt="Virtual Function" title="Virtual Function"><strong>Virtual</strong> Function</a>

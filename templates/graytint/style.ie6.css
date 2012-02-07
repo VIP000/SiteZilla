@@ -1,0 +1,13 @@
+.header2 {
+	width: 675px;
+	height: 105px;
+	background: url(img/header2.png) bottom left repeat-x;
+	font-family: Book Antiqua, Times New Roman;
+	color: #666666;
+	font-size: 50px;
+	text-align: left;
+	padding: 0px 50px 0px 95px;
+	cursor: default;
+	line-height: 105px;
+	vertical-align: middle;
+}

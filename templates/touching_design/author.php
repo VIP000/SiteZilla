@@ -1,0 +1,1 @@
+<a href="http://freethoughts.ftmblog.com" target="_blank" alt="FTM" title="FTM">FTM</a>

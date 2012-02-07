@@ -1,0 +1,1 @@
+<a href="http://www.gettemplate.com" target="_blank" title="GetTemplate.com" alt="GetTemplate.com">GetTemplate.com</a>

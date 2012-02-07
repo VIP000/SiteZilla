@@ -1,0 +1,155 @@
+*{margin:0; padding:0;}
+
+body{
+font:76% Verdana,Tahoma,Arial,sans-serif;
+/* font: .8em Verdana, Arial, Sans-Serif; */
+line-height:1.4em;
+background:#585953;
+}
+
+
+#container{
+width:760px;
+margin:20px auto;
+padding:10px;
+text-align:left;
+background:#ffffff;
+color:#303030;
+}
+
+#header{
+height:80px;
+width:758px;
+background: #e54602;
+color:#ffffff;
+}
+
+#header h1 {
+padding:25px 0 0 20px;
+font-size:45px;
+background-color:inherit;
+color:#ffffff;
+letter-spacing:-2px;
+font-weight:bold;
+}
+
+#header h1 a{
+text-decoration:none;
+color:#ffffff;
+}
+
+#header h2{
+margin:15px 0 0 20px;
+font-size:1.4em;
+background-color:inherit;
+color:#f0f2f4;
+letter-spacing:-1px;
+font-weight:normal;
+}
+
+/**************** Content styles ****************/
+
+#content{
+float:left;
+width:530px;
+font-size:0.9em;
+padding: 10px 0 10px 5px;
+}
+#content h1,h2,h3,h4,h5,h6{
+color: #59770e;
+margin: 0px 0px 2px;
+border-bottom: 1px dotted #CCCCCC;
+letter-spacing: -1px;
+font: normal 190%/100% "Trebuchet MS", Tahoma, Arial;
+padding-bottom: 3px;
+}
+#content p{ padding-bottom: 15px;}
+
+/**************** Sidebar styles ****************/
+
+#right{
+float:right;
+width:210px;
+padding: 10px 5px 10px 0;
+line-height:1.4em;
+}
+
+#right h2{
+background: #1788c8;
+margin: 0 10px 0 0;
+font-family: Tahoma;
+font-size: 11px;
+font-weight: bold;
+color: #ffffff;
+padding: 5px 8px 5px 10px;
+}
+#right p{ margin:0 0 16px 0; font-size:0.9em; padding: 4px;
+border-top: 1px solid #d8d8d8;
+border-right: 1px solid #d8d8d8;
+border-bottom: 1px solid #d8d8d8;
+border-left: 4px solid #cccccc;
+width: 187px;
+background:#f4f4f4;
+}
+
+/**************** Navagation ****************/
+#avmenu ul {
+list-style:none;
+width:190px;
+margin:0 0 20px 0;
+padding: 5px;
+}
+
+#avmenu li { margin-bottom:3px; }
+
+#avmenu li a {
+font-weight:bold;
+height:20px;
+text-decoration:none;
+color:#505050;
+display:block;
+padding:6px 0 0 10px;
+background:#f4f4f4;
+border-top:1px solid #d8d8d8;
+border-right:1px solid #d8d8d8;
+border-bottom:1px solid #d8d8d8;
+border-left:4px solid #cccccc;
+}
+
+#avmenu li a:hover, #avmenu li a.current {
+background:#eaeaea;
+color:#505050;
+border-top:1px solid #b0b0b0;
+border-right:1px solid #b0b0b0;
+border-bottom:1px solid #b0b0b0;
+border-left:4px solid #82ba00;
+}
+
+#avmenu ul ul {
+margin: 0 0 0 10px;
+font-size:0.9em;
+width:160px;
+}
+
+#avmenu ul ul a {
+height:16px;
+margin:0;
+padding: 4px 0 4px 8px;
+border-left:4px solid #1788c8;
+}
+
+/**************** Footer styles ****************/
+
+#footer{
+clear:both;
+width:758px;
+padding:5px 0;
+margin:0 1px;
+font-size:0.9em;
+color:#f0f0f0;
+background:#1788c8;
+}
+
+#footer p{padding:0; margin:0; text-align:center;}
+#footer a{color:#f0f0f0; background-color:inherit; font-weight:bold;}
+#footer a:hover{color:#ffffff; background-color:inherit; text-decoration: underline;}

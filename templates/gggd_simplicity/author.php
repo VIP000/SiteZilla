@@ -1,0 +1,1 @@
+<a href="http://www.gggdesign.com" target="_blank" title="GGGDesign.com" alt="GGGDesign.com">GGGDesign.com</a>

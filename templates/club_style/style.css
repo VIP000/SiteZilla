@@ -1,0 +1,179 @@
+/* CSS Document The Alternative*/
+
+body {
+background: #131313 url('images/bkg.jpg') repeat-x;
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 11px;
+}
+
+#container {
+background: #0c1d0a;
+width: 726px;
+min-height: 600px;
+margin: 0px auto;
+}
+
+#header {
+background: #131313 url('images/header.jpg') no-repeat top left;
+height: 237px;
+width: 725px;
+border-top: solid 1px #000;
+border-left: solid 1px #000;
+}
+
+#headertxt {
+height: 180px;
+width: 725px;
+}
+
+#company {
+	padding: 15px 0px 0px 10px; 
+}
+
+#company a {
+	text-decoration:none;
+	color:#0C1D0A;
+	font-size:25px;
+	font-weight:bold;
+}
+
+#menu {
+padding: 155px 0px 0px 10px;
+color: #000;
+font-variant: small-caps;
+font-style: bold;
+text-align: center;
+line-height: 33px;
+}
+
+#menu a{
+color: #000;
+text-decoration: none;
+padding: 7px 10px 10px 10px;
+line-height: 33px;
+}
+
+#menu a:hover{
+color: #87b16d;
+background: #131313 url('images/menubkg.jpg') no-repeat top left;
+line-height: 33px;
+padding: 7px 10px 10px 10px;
+}
+
+#content {
+width: 723px;
+min-height: 330px;
+margin: 1px;
+border-left: solid 1px #87b16d;
+border-right: solid 1px #87b16d;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 11px;
+color: #87b16d;
+overflow: hidden;
+}
+
+#footer {
+background: #131313 url('images/footer.jpg') no-repeat top left;
+height: 33px;
+width: 725px;
+font-size: 9px;
+text-align: center;
+margin: 0px 0px 0px 0px;
+padding: 9px 0px 0px 0px;
+color: #09002f;
+}
+
+#footer a {
+color: #09002f;
+text-decoration: underline;
+}
+
+#footer a:hover {
+text-decoration: none;
+}
+
+#maincontentbox {
+/* float: left; */
+/* width: 400px; */
+padding: 10px 10px 10px 10px;
+}
+
+.quotes {
+border-left: 2px #87b16d solid;
+margin-left: 15px;
+padding-left: 5px;
+line-style: justified;
+}
+
+.img {
+padding: 5px 5px 5px 5px;
+}
+
+/*#smallcontentbox {
+float: left;
+width: 200px;
+margin-left: 20px;
+padding: 10px 10px 10px 10px;
+}*/
+
+h1 {	/*none*/
+font-size: 11px;
+background: url('images/headers.jpg') #131313 no-repeat top left;
+padding: 0 35px;
+font-variant: small-caps;
+}
+
+h2 {	/*news*/
+font-size: 11px;
+background: url('images/newshdr.jpg') #131313 no-repeat top left;
+padding: 0 35px;
+font-variant: small-caps;
+line-height: 30px;
+}
+
+h3 {	/*dance*/
+font-size: 11px;
+background: url('images/dancehdr.jpg') #131313 no-repeat top left;
+padding: 0 35px;
+font-variant: small-caps;
+line-height: 30px;
+}
+
+h4 { /*music*/
+font-size: 11px;
+background: url('images/livemusichdr.jpg') #131313 no-repeat top left;
+padding: 0 35px;
+font-variant: small-caps;
+line-height: 30px;
+}
+
+h5 {	/*party*/
+font-size: 11px;
+background: url('images/partyhdr.jpg') #131313 no-repeat top left;
+padding: 0 35px;
+font-variant: small-caps;
+line-height: 30px;
+}
+
+a , a:visited {
+color: #87b16d;
+text-decoration: underline;
+}
+
+a:hover {
+color: #87b16d;
+text-decoration: none;
+}
+
+.bold {
+font-weight: bold;
+}
+
+li, ul {
+list-style: none;
+text-align: left;
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 5px 0px;
+}

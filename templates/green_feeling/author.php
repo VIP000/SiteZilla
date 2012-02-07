@@ -1,0 +1,1 @@
+<a href="http://www.oswd.org/designs/search/designer/id/6399/" target="_blank" title="(r. maguire) of OSD/OSWD" alt="(r. maguire) of OSD/OSWD">(r. maguire) of OSD/OSWD</a>

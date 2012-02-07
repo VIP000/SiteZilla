@@ -1,0 +1,1 @@
+<a href="http://www.kulor.com/?ref=mighty_template" alt="Kulor" title="Kulor" target="_blank"> Kulor</a>

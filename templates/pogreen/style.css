@@ -1,0 +1,109 @@
+html {
+	background: url('images/background_green.png');
+	text-align:center;
+}
+
+.wrapper {
+	background: #fff;
+	width: 80%;
+	text-align: center;
+	margin:-10px auto;
+}
+
+.header {
+	background: #090;
+	color: #fff;
+}
+
+.header h1{
+	padding: 1%;
+	padding: 2%;
+	text-transform: uppercase;
+	text-decoration: overline;
+}
+
+.header h1 a{
+	background: #090;
+	color: #fff;
+	text-decoration:none;
+}
+
+.nav {
+	text-align: center;
+	width: 100%;
+	background: #090;
+	margin: -3% 0 0 0;
+	padding: 2% 0 0 0;
+	border: 1px #fff dotted;
+	padding: 0 auto;
+}
+
+.nav ul li {
+	list-style: none;
+	display: inline;
+}
+
+.nav ul li a{
+	color: #fff;
+	border: 1px solid #fff;
+	text-decoration: none;
+	padding: 1%;
+}
+
+.nav ul li a:hover{
+	color: #090;
+	border: 1px solid #fff;
+	text-decoration: overline;
+	padding: 1%;
+	background: #fff;
+}
+
+.content{
+	background: #fff;
+	color: #090;
+	width: 90%;
+	text-align: left;
+	margin:0 auto;
+}
+
+.content a{
+	color: #090;
+}
+
+.content h3{
+	text-align:left;
+	text-decoration: underline;
+	padding-top: 2%;
+}
+
+.box_right{
+	float: right;
+	width: 20%;
+	border: 1px dotted #090;
+	padding: 1%;
+	margin: 1%;
+}
+
+.box_left{
+	float: left;
+	width: 20%;
+	border: 1px dotted #090;
+	padding: 1%;
+	margin: 1%;
+}
+
+.footer{
+	background: #090;
+	color: #fff;
+	width: 100%;
+	text-align: center;
+}
+
+.footer a{
+	color: #fff;
+}
+
+.footer a:hover{
+	background: #fff;
+	color: #090;
+}

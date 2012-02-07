@@ -1,0 +1,1 @@
+<a href="http://www.angelfire.com/blog/doublec" target="_blank" title="Chris Cross" alt="Chris Cross">Chris Cross</a>

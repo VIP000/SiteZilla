@@ -1,0 +1,138 @@
+* {
+     margin: 0pt;
+     padding: 0pt;
+}
+
+body {
+     font-family: Georgia,"Times New Roman",Times,serif;
+}
+
+#main {
+     background-image: url("images/main.jpg");
+     background-repeat: no-repeat;
+     height: 399px;
+     margin-left: auto;
+     margin-right: auto;
+     width: 741px;
+}
+
+#linkbar {
+     background-image: url("images/linkbar.jpg");
+     background-repeat: no-repeat;
+     height: 43px;
+     margin-left: auto;
+     margin-right: auto;
+     width: 741px;
+}
+
+#top_content {
+     background-image: url("images/top_content.jpg");
+     background-repeat: no-repeat;
+     height: 135px;
+     margin: auto;
+     width: 741px;
+}
+
+#main_content {
+     background-image: url("images/body_tile.jpg");
+     background-repeat: repeat-y;
+     font-size: 12px;
+     margin-left: auto;
+     margin-right: auto;
+     padding-left: 125px;
+     padding-right: 260px;
+     width: 356px;
+}
+
+#footer {
+     background-image: url("images/footer.jpg");
+     font-size: 10px;
+     height: 130px;
+     margin-left: auto;
+     margin-right: auto;
+     padding-left: 0px;
+     padding-top: 100px;
+     text-align: center;
+     width: 741px;
+}
+
+#footer p {
+	padding-right: 150px;
+}
+
+#footer a {
+	text-decoration:none;
+     color: #A9AC96;
+}
+
+p {
+     padding-bottom: 6px;
+     padding-top: 6px;
+}
+
+h1 {
+     color: #A9AC96;
+     font-family: Georgia,"Times New Roman",Times,serif;
+     font-size: 24px;
+     font-style: italic;
+     padding-left: 112px;
+     padding-top: 40px;
+}
+
+h1 a {
+     color: #A9AC96;
+     font-size: 18px;
+     font-weight: bold;
+     text-decoration: none;
+}
+
+h2 {
+     color: #B3B79B;
+     font-family: Georgia,"Times New Roman",Times,serif;
+     font-size: 12px;
+     font-style: italic;
+     padding-left: 112px;
+     padding-top: 0px;
+}
+
+h3 {
+     color: #8D926A;
+     font-size: 16px;
+     font-style: italic;
+     padding-bottom: 15px;
+     padding-top: 15px;
+}
+
+blockquote {
+     font-size: 12px;
+     font-style: italic;
+     margin-left: 165px;
+     margin-right: 300px;
+     padding: 45px 6px 6px;
+}
+
+#navcontainer ul {
+     color: #006633;
+     font-size: 90%;
+     font-style: normal;
+     font-variant: normal;
+     font-weight: normal;
+     list-style-type: none;
+     margin-left: 130px;
+     padding: 16px 0pt 2px;
+}
+
+li {
+     display: inline;
+}
+
+li a {
+     color: #666666;
+     padding: 0.2em 1em;
+     text-decoration: none;
+}
+
+li a:hover {
+     background-color: #EDEEE8;
+     color: #333333;
+}

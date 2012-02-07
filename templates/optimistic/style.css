@@ -1,0 +1,199 @@
+* {margin: 0; padding: 0; border: none; text-decoration: none;}
+html {
+	background: url(images/bg1.gif) #ddddae center;
+	text-align: center;
+	font: small "Georgia", "Palatino Linotype", "Times New Roman", serif;
+	color: #444;
+}
+body {
+	background: url(images/bg2.jpg) center top repeat-x;
+}
+p, ul, ol {
+	padding: 5px 0;
+	line-height: 150%;
+}
+ol {list-style-type: upper-roman;}
+ul {list-style-type: circle;}
+li {margin-left: 1.5em;}
+a:link {/*border-bottom: 1px dashed;*/ font-weight: bold;}
+a:visited {border: none; font-weight: normal;}
+code {color: #f5f5f5; font-size: 100%;}
+blockquote, .box {
+	border-left: 5px solid #0b1207;
+	background: url(images/quote.gif) #2a451a top left no-repeat !important;
+	background-position: .1cm 0;
+	margin: 10px 0;
+	padding: 0 10px 0 20px;
+	font-style: italic;
+	color: #b6cf9b;
+}
+#container {
+	width: 757px;
+	margin: 0 auto;
+	text-align: left;
+	background: url(images/header.jpg) left top no-repeat;
+	padding-right: 13px !important;
+	padding-right: 12px;
+}
+#header {
+	height: 123px;
+	position: relative;
+}
+#header h1 a{
+	color: #a9c57f;
+	font: italic bold 40px "Times New Roman", "Georgia", sans-serif;
+	padding: 50px 0 0 320px;
+	text-decoration:none;
+}
+#content {
+	width: 445px;
+	float: right;
+	background: url(images/bg_content-top.jpg) #365921 left top no-repeat;
+	color: #ffedaf;
+	position: relative;
+}
+#content div {
+	background: url(images/bg_content-bottom.gif) left bottom no-repeat;
+	padding: 20px;
+	position: relative;
+}
+#content div div {background: none; padding: 0;}
+#column {
+	width: 230px;
+	background: url(images/bg3.gif) left top repeat-y;
+	float: right;
+	margin: 384px 52px 0 0;
+}
+#column div {
+	margin-top: -220px;
+	/*background: url(images/credit.gif) left bottom no-repeat;*/
+	padding: 0 20px;
+	position: relative;
+}
+#column div div {
+	margin: 0;
+	padding: 0;
+	background: none;
+}
+#footer {
+	clear: both;
+	text-align: center;
+	font-size: 85%;
+	color: #7ca758;
+}
+#footer a:link, #footer a:visited {
+	color: #7ca758;
+	border: none;
+	font-weight: bold;
+}
+#footer a:hover {color: #345620;}
+#column h2, #column h3 {color: #1b300f;}
+#column ul.menu {padding-bottom: 10px;}
+#column ul.menu li {
+	display: inline;
+	margin:0;
+	list-style: none;
+}
+#container #column ul.menu li a {
+	display: block;
+	margin: 3px 0;
+	background: #b3c46c;
+	border-bottom: 1px solid #99ab3c;
+	padding: .2em .3em;
+	color: #365921;
+	position: relative;
+	font-weight: normal;
+}
+#container #column ul.menu li a:hover {
+	color: #000;
+	background: url(images/sidemenu_hover.gif) #b3c46c right center no-repeat;
+}
+/*h1 {
+	color: #a9c57f;
+	font: italic normal 3em "Times New Roman", "Georgia", sans-serif;
+	padding: 10px 0 0 270px;
+}*/
+#content h1, h2, h3, h4, h5, h6 {
+	background: url(images/bg_title.gif) right top no-repeat;
+	color: #f4d547;
+	margin: 0 -20px;
+	font: italic normal 1.6em "Times New Roman", "Georgia", sans-serif;
+	padding: 22px 10px 20px 90px;
+}
+#column h3 {
+	background: none;
+	font: italic bold 1.6em "Times New Roman", "Georgia", sans-serif;
+	color: #1b300f;
+	margin: 0;
+	padding: 5px 0 5px 0;
+	
+}
+/*#content h3 {
+	font-size: 1.3em;
+	color: #e5cb5d;
+	border-bottom: 3px solid #2d4f18;
+}*/
+#content p, #content li {text-align: justify;}
+#column a:link, #column a:visited {
+	color: #697f0f;
+	border-color: #99ab3c;
+}
+#content a:link, #content a:visited {
+	color: #b3c46c;
+	border-color: #58803a;
+}
+#column a:hover {color: #ffedaf;}
+#content a:hover {color: #fadb7e;}
+#container #column a.credit {
+	display: block;
+	height: 30px;
+	text-indent: -9999px;
+	border: none;
+}
+#mainmenu {
+	position: absolute;
+	left: 295px;
+	bottom: 1px !important;
+	bottom: 0;
+	list-style: none;
+}
+#mainmenu li {
+	width: auto;
+	float: left;
+	margin-left: 5px;
+
+}
+#container #mainmenu li a {
+	display: block;
+	border: none;
+	color: #a9c57f;
+	padding: 0 9px;
+	margin-left: 7px;
+	font: italic bold 1.5em "Times New Roman", "Georgia", sans-serif;
+}
+#container #mainmenu li a:hover, #mainmenu li.over, #mainmenu .active {
+	color: #fff;
+/*#container #mainmenu li a span {
+	display: block;
+	padding: 5px 0;
+}
+#mainmenu li:hover, #mainmenu li.over, #mainmenu .active {
+	background: url(images/menu_hover-left.gif) top left no-repeat;
+}
+#container #mainmenu li:hover a, #container #mainmenu li.over a, #mainmenu .active a {
+	background: url(images/menu_hover-right.gif) top right no-repeat;
+}
+#container #mainmenu li:hover a span, #container #mainmenu li.over a span {
+	background: #000;
+}
+#container #mainmenu li a:hover {
+	color: #f2ff7f;
+}
+#container #mainmenu .active a span {
+	background: #000;
+	color: #a9c57f;*/
+}
+#content, #column div {
+	overflow: visible !important;
+	overflow: hidden;
+}

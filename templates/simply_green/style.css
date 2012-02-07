@@ -1,0 +1,107 @@
+/*TEMPLATE SIMPLY-GREEN -KALYAN.CSS - BY KALYAN CHAKRAVARTHY*/
+
+body { text-align:center; background-color:#B7C584; }
+form { display:inline; padding:0; margin:0; }
+code { font-size:12px; }
+
+#page 
+{ 
+  margin:auto; 
+  width:762px; 
+  border:3px solid #6F7850;
+  font:76% verdana,tahoma;
+  text-align:left;
+  display:block;
+}
+
+#header    { clear:both; margin:20px; }
+#header h1 { font:35px verdana,tahoma; padding:0; margin:0px; color:#6F7850; }
+#header h2 { font:15px verdana,tahoma; padding:0; margin:0px; color:#6F7850; }
+#header h1 a { color:#002200;  }
+
+#main      { margin:20px; clear:both; }
+#content   { float:right; width:72%; }
+
+#righty    { float:left; width:25%;  }
+
+#main h2   
+{
+ font:150% verdana,tahoma;
+ padding:2px;
+ padding-left:5px;
+ padding-bottom:0px;
+ color:#002200;
+ border-top:3px solid #6F7850;
+ border-left:15px solid #6F7850;
+ margin:10px 0px 10px 0px;
+ font-variant:small-caps;
+ display:block;
+}
+
+#main   p  { margin:6px; }
+
+#main   ul { padding:0px; margin:10px 0 10px 20px; }
+#main   li { list-style: square inside; }
+
+#footer    {  margin:20px; clear:both; border-top:1px solid #6F7850; text-align:center; color:#6F7850; }
+#nav ul    { list-style-type:none; border:0px solid black; padding:0px; margin:0px;}
+#nav li 
+{ 
+ padding:0px;
+ margin:0px;
+ display:inline;
+}
+
+
+#nav li a 
+{
+ display:block;
+ font-weight:lighter;
+ border-left:5px solid #929E6A;
+ padding:3px 5px 4px 10px;
+ margin:3px 5px 0 5px;
+ text-decoration:none;
+ color:black; 
+}
+
+#nav li a:hover
+{
+ display:block;
+ border-left:15px solid #6F7850;
+ background:#929E6A;
+ padding:3px 5px 4px 5px;
+ margin-left:0px;
+ color:black;
+}
+
+#main a, #footer a
+{
+ color:#E9F5C6;
+ border-bottom:1px solid #7C8269;
+ text-decoration:none;
+ font-weight:bolder;
+}
+
+#main a:hover, #footer a:hover
+{
+ color:#6F7850;
+}
+
+
+#main img{
+ padding:2px;
+ margin:3px;
+ border:1px solid #6F7850;
+ display:block;
+}
+
+
+.img-left{
+ float:left;
+ clear:left;
+}
+
+.img-right{
+ float:right;
+ clear:right;
+}

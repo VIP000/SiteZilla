@@ -1,0 +1,138 @@
+/*
+	GGG-D Screen Styles
+
+	Table of Contents:
+		layout
+		typography
+		forms
+*/
+
+/* layout
+----------------------------------------------- */
+body { 
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin: 0px; background-color: #ffffff; font-size: 16px;
+	}
+#content {
+	border-right: #cccccc 2px solid; PADDING-RIGHT: 10px; PADDING-LEFT: 20px; FLOAT: left; PADDING-BOTTOM: 0px; WIDTH: 580px; LINE-HEIGHT: 1.6em; PADDING-TOP: 0px; background-color: #ffffff;
+	font-size: 80%; color: #666666;  margin-bottom: 10px;
+	}	
+#wrapper {
+	MARGIN: 0px auto; WIDTH: 770px; TEXT-ALIGN: left; 
+	padding: 5px 5px 9px 5px;
+	}
+#bg {
+	PADDING-RIGHT: 19px; PADDING-LEFT: 15px; PADDING-BOTTOM: 5px; PADDING-TOP: 10px
+	}
+#header {
+	background-image: url('images/banner.jpg');;
+	width:750px;
+	height:250px;
+	border: 5px solid #cccccc; padding: 1px;
+	}
+#nav {
+	PADDING-LEFT: 5px; BACKGROUND: #BFBFBF; MARGIN: 1px 0px; HEIGHT: 35px; text-align: right;
+	font-size: 80%; padding-right: 10px;  border-bottom: 7px solid #666666;
+	}
+.banner-image {
+	border: 5px solid #cccccc; padding: 1px;
+}
+/* typography
+----------------------------------------------- */
+.comment {
+	text-align: right;
+	font-size: 80%; color: #cccccc;
+	}
+	
+h1 {
+	border-bottom: 2px dotted #000000;
+	color: #FF9600;
+	font-size: 170%;
+	font-family: "Times New Roman", Times, serif;
+	font-weight: bold;
+	letter-spacing: 0.2em;
+	}
+
+h2 {
+	border-bottom: 1px dotted #000000;
+	color: #FF9600;
+	font-size: 120%;
+	font-family: "Times New Roman", Times, serif;
+	font-weight: bold;
+	letter-spacing: 0.2em;
+	}
+
+h3 {
+	border-bottom: 1px dotted #000000;
+	color: #FF9600;
+	font-size: 100%;
+	font-family: "Times New Roman", Times, serif;
+	font-weight: bold;
+	letter-spacing: 0.2em;
+	}
+	
+.nav-hdr {
+	font-size: 90%; font-weight: bold; font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FF9600;
+	border-bottom: 1px solid #BFBFBF;
+	margin-bottom: 5px; font-variant:small-caps;
+	}
+
+.footer-links { font-size: 80%; border-top: 1px solid #cccccc; text-align: center; 
+	}
+
+.footer-links a { COLOR: #8D8C53; TEXT-DECORATION: none; 
+	}
+	
+.company1 a{
+	font-size: 150%;
+	font-family: Georgia, "Times New Roman", Times, serif; 
+	color: #FF9600;
+	text-decoration:none;
+}
+
+.company2 {
+	font-size: 150%;
+	font-family: Georgia, "Times New Roman", Times, serif; color: #FF9600;
+}
+
+
+	/* links 
+	------------------------------------------- */
+	A {
+		font-size: 80%; TEXT-DECORATION: none; font-size: 100%; font-family: Verdana, Arial, Helvetica, sans-serif;
+	}
+	
+	a:hover {
+		text-decoration: underline;
+	}
+
+
+	A.mainnav:hover {
+	TEXT-DECORATION: underline; BORDER-RIGHT: #444444 3px solid; COLOR: #444444; TEXT-DECORATION: none
+	}
+
+.clearthis {
+	CLEAR: both; FONT-SIZE: 1px; FLOAT: none; COLOR: #fff
+}
+#menu {
+	PADDING-RIGHT: 15px; MARGIN-TOP: 10px;  FLOAT: right; PADDING-BOTTOM: 0px; LINE-HEIGHT: 1.3em; PADDING-TOP: 0px; background-color: #ffffff; width: 135px; font-size: 100%;
+}
+#menu UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; LINE-HEIGHT: 15px; PADDING-TOP: 0px
+}
+#menu LI {
+	MARGIN: 0px; height: 20px; BORDER-BOTTOM: #ececec 1px solid; LIST-STYLE-TYPE: none
+}
+#menu A {
+	DISPLAY: block;  BACKGROUND: #fff;  COLOR: #666666; TEXT-DECORATION: none; font-size: 100%; font-family: Georgia, "Times New Roman", Times, serif; font-weight: bold; padding: 3px;
+}
+#menu A.mainnav:hover {
+	BACKGROUND: #BFBFBF; COLOR: #fff; 
+}
+
+.quote {
+	background-color: #cccccc;
+	border: 1px solid #B4B4B4;
+	color: #000000; padding: 2px;
+}

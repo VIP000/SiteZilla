@@ -1,0 +1,116 @@
+body
+{
+	margin: 0;
+	text-align: center;
+	font-family: Georgia, Lucida, Arial, sans-serif;
+	font-size: 11px;
+}
+
+img
+{
+	border: 0;
+}
+
+a
+{
+	text-decoration: none;
+}
+.wrapper
+{
+	margin: 0 auto 0 auto;
+	width: 760px;
+	text-align:left;
+	background-color: white;
+}
+
+/*--------------Header----------------------*/
+.header
+{
+	height: 80px;
+	background-color: #D6D9EC;	
+	background: url(images/header.jpg);
+}
+
+.header h1
+{
+	font-family: Georgia, Lucida, Arial, sans-serif;
+	font-size: 26px;
+	color: #00008B;
+	padding-top: 10px;
+	padding-left:50px;		
+	margin-bottom: 0;
+}
+
+/*------------- Navigation------------------*/
+.nav
+{
+	text-align:right;
+	margin: 0;
+}
+.nav li
+{
+	display: inline;
+	list-style-type: none;
+}
+
+.nav li a
+{
+	text-decoration: none;
+	font-size:11px;
+	font-family: Georgia, Lucida, Arial, sans-serif;
+	padding-left: 20px;
+	padding-top: 5px;	
+	padding-right:20px;
+}
+
+.nav li a:hover
+{
+	text-decoration:none;
+	background-color: #DADCF1;
+}
+
+.nav li a
+{
+	background-color: #D6D9EC;
+	color:black;
+	
+}
+
+.nav li a:hover
+{
+	background-color: #FFFFFF;
+	color:black;
+	
+}
+
+
+/*--------------Content------------------------*/
+
+.content
+{
+	border-style: solid;
+	border-width: 1px;
+	border-color: #D6D9EC;	
+	padding: 5px;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+	font-size: 11px;
+	background-color: #D6D9EC;
+	padding: 2px;
+	margin: 0;
+	font-family:  Georgia;
+	color: #00008B;
+}
+
+/*----------------Footer-----------------------*/
+.footer
+{
+	clear:both;
+	background-color: #D6D9EC;
+	text-align: center;
+	padding: 5px;
+	font-size: 10px;
+	font-family: Verdana;
+}

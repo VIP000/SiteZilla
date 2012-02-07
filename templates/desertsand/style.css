@@ -1,0 +1,245 @@
+/* Desert Sand CSS  LFS ACES - Leave this code here please.  Template by Len Saunders  http://www.lensaunders.com */
+
+body { 
+	font:8pt verdana; 
+	background: #FFFFFF url('images/desertsand.jpg');
+	margin:0;
+	padding:0;
+	}
+.style5 {color: #003366}
+.style6 {
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.style7 {color: #FFFFFF}
+
+div#navcontainer
+{
+background-color: #775D42;
+border-top: solid 1px #FFFFFF;
+border-bottom: solid 1px #FFFFFF;
+}
+
+div#navcontainer ul
+{
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+color: white;
+text-align: center;
+margin: 0;
+padding-bottom: 5px;
+padding-top: 5px;
+}
+
+div#navcontainer ul li
+{
+display: inline;
+margin-left: 0px;
+}
+
+div#navcontainer ul li a
+{
+padding: 5px 10px 5px 10px;
+color: white;
+text-decoration: none;
+
+}
+
+div#navcontainer ul li a:hover
+{
+background-color: #B7734B;
+color: white;
+}
+#navlist {
+	margin:0;
+	padding:0;
+}
+/* #navcontainerr { margin-left: 1px; }
+
+#navcontainerr ul
+{
+background-color: #B7734B;
+margin: 0;
+padding: 0;
+list-style-type: none;
+font-family: verdana, arial, sans-serif;
+font-weight: bold;
+}
+
+#navcontainerr li { margin: 1px; 
+}
+
+#navcontainerr a
+{
+display: block;
+color: #FFFFFF;
+width: 114px;
+padding: 2px 5px;
+text-decoration: none;
+border-top: 1px solid #B7734B;
+border-bottom: 1px solid #B7734B;
+border-left: 5px solid #775D42;
+font-size: 12px;
+}
+
+#navcontainerr a:hover
+{
+background-color: #FFFFFF;
+color: #775D42;
+border-right: 5px solid #775D42;
+padding: 2px 1px 2px 10px;
+}
+
+#navcontainerr ul ul
+{
+margin-left: 20px;
+padding: 0;
+background-color: #B7734B;
+
+}
+
+#navcontainerr li li a
+{
+display: block;
+color: #333;
+background-color: #B7734B;
+width: 120px;
+padding: 2px 10px;
+margin: 0;
+border-top: none;
+border-bottom: none;
+border-left: 1px solid #aaa;
+text-decoration: none;
+font-size: 12px;
+}*/
+
+h1 {
+
+	font:28pt verdana, arial, sans-serif;
+	color:#666;
+	margin:0;
+	padding:20px;
+}
+
+h2 {
+
+	font:14pt verdana, arial, sans-serif;
+	color:#666;
+	padding:10px;
+	margin:0;
+        text-align: center;
+}
+
+h3 {
+
+	font:10pt verdana, arial, sans-serif;
+	color:#FFFFFF;
+	padding:12px;
+	margin:0;
+        text-align: left;
+        font-weight: bold;
+}
+
+p { 
+	font: 8pt verdana; 
+	margin: 0px; 
+	text-align: justify;
+	}
+	
+#contain {
+
+	width:750px;
+	border-right:1px solid #000000;
+	border-left:1px solid #000000;
+	margin-left:auto;
+	margin-right:auto;
+	background: #FFF;
+        }
+	
+#header {
+        background: #FFF url('images/desert.jpg') right no-repeat;
+	width:750px;
+        height:165px;
+	border-bottom:1px solid #B7734B;
+	
+}
+	
+#header a {
+	text-decoration:none;
+	color:#FFFFFF;
+	
+}
+
+#leftcol {
+
+	width:140px;
+	float:left;
+	padding:5px 0 5px 0;
+	background-color: #B7734B;
+	margin: 0;
+
+}
+
+#leftcol p {
+
+	padding:3px 18px 3px 18px;
+	margin:0;
+
+}
+
+#content {
+
+/* 	margin-left:140px; */
+	width:100%;
+
+}
+
+#content p {
+
+	padding:3px 18px 3px 18px;
+	margin:0;
+
+}
+
+#footer {
+
+	width:750px;
+	clear:left;
+	border-top:1px solid #FFFFFF;
+	border-bottom:1px solid #000000;
+	background: #FFF url('images/stones.jpg') repeat-x;
+	padding: 25px 0 3px 0;
+
+}
+
+#footer p {
+	text-align:center;
+	padding-right:8px;
+	font:8pt verdana, arial, sans-serif;
+        font-weight: bold;
+        color: #000000
+        
+}
+
+#leftImg
+{
+float:left;
+padding: 0 0px 0px 0;
+}
+a:link {
+color: #775D42;
+text-decoration: none;
+}
+a:visited {
+text-decoration: none;
+color: #775D42;
+}
+a:hover {
+text-decoration: none;
+color: #775D42;
+}
+a:active {
+text-decoration: none;
+color: #775D42;
+}

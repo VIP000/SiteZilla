@@ -1,0 +1,137 @@
+body {
+     background: none repeat scroll 0% 0% #000000;
+     color: #CCCCCC;
+     font-family: Verdana,Arial,Helvetica,serif;
+     font-size: 0.8em;
+     margin: 0pt;
+     padding: 0pt;
+}
+
+a {
+     color: #000000;
+}
+
+a:hover {
+     text-decoration: none;
+}
+
+#main {
+     border-left: 1px dashed #FFFFFF;
+     border-right: 1px dashed #FFFFFF;
+     margin-left: auto;
+     margin-right: auto;
+     width: 80%;
+}
+
+#menu {
+     float: left;
+     width: 20%;
+}
+
+#menu ul {
+     list-style-type: none;
+     margin-bottom: 5em;
+}
+
+#menu ul li {
+     border-color: #CCCC33;
+     border-style: solid;
+     border-width: 0pt 1px 1px;
+     padding: 0.5em;
+     text-align: center;
+     text-transform: uppercase;
+}
+
+#menu ul li a {
+     color: #CCCC33;
+     padding: 0.5em 1.5em;
+}
+
+#menu ul li:hover {
+     background: none repeat scroll 0% 0% #CCCC33;
+     color: #000000;
+}
+
+#menu ul li:hover a {
+     background: none repeat scroll 0% 0% #CCCC33;
+     color: #000000;
+}
+
+#header {
+     background: none repeat scroll 0% 0% #CCCC33;
+     color: #000000;
+     margin-bottom: 2em;
+     padding: 0.5em 1em 5em;
+}
+
+#header > p {
+     font-style: italic;
+}
+
+#header > p + p {
+     font-style: normal;
+     text-align: center;
+}
+
+#header h1 {
+     border-bottom: 1px solid #000000;
+     font-family: Arial,serif;
+}
+
+#header h1 a {
+     border-bottom: 1px solid #000000;
+     font-family: Arial,serif;
+	 font-size: 35px;
+     text-decoration: none;
+}
+
+#content {
+     border-right: 1px solid #CCCC33;
+     border-top: 1px solid #CCCC33;
+     float: left;
+     margin: 1em;
+     padding: 1em;
+     width: 70%;
+}
+
+#content h2, #content h3 {
+     border-bottom: 1px solid #CCCC33;
+     color: #CCCC33;
+     width: 50%;
+}
+
+#content h2 {
+     padding-left: 1em;
+}
+
+#content h3 {
+     padding-left: 3em;
+}
+
+#content p {
+     border-left: 1px dashed #FFFFFF;
+     padding-left: 1em;
+     text-indent: 2em;
+}
+
+#content h2 + p {
+     font-size: 1em;
+}
+
+#content h3 + p {
+     font-size: 0.9em;
+}
+
+#footer {
+     background: none repeat scroll 0% 0% #CCCC33;
+     clear: both;
+     color: #000000;
+     font-size: 0.8em;
+     margin-bottom: 2em;
+     padding: 5em 1em 0.5em;
+     text-align: center;
+}
+
+#footer a {
+    
+}

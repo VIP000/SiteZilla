@@ -1,0 +1,158 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 80%;
+	color: #2A3053;
+	background-color: #DCDCDC;
+	text-align: center;
+}
+
+p {
+	margin: 0.1em 0 0.1em 0;
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 200%;
+	font-weight: normal;
+	color: #FFBA37;
+}
+
+h2 {
+	margin: 0;
+	padding: 0;
+	background-color: #FFBA37;
+	color: White;
+	font-size: 100%;
+	font-weight: normal;
+	border-bottom: 1px solid #2A3053; 
+	border-top: 1px solid #2A3053; 
+}
+
+div {
+	margin: 0; 
+	padding: 0; 
+	display: block;
+}
+
+a:link {
+	color: #E16840; 
+	text-decoration: none;
+}
+
+a:hover {
+	color: grey; 
+	text-decoration: none;
+}
+
+a:active {
+	color: #E16840; 
+	text-decoration: none;
+}
+
+a:visited {
+	color: #B840E1; 
+	text-decoration: none;
+}
+
+.container {
+	background-color: #FFFFFF; 
+	margin: 5px auto 0 auto; 
+	padding: 0; 
+	width: 720px;
+	border-left: 1px solid #2A3053;
+	border-right: 1px solid #2A3053;
+}
+
+.header {
+	padding: 0; 
+	margin: 0; 
+	text-align: right;
+	background-image: url(images/header.jpg); 
+	background-repeat: no-repeat; 
+	background-position: center;
+	height: 150px;
+	border-bottom: 1px solid #2A3053;
+	border-top: 1px solid #2A3053;
+}
+
+.header h1 {
+	margin-top: 1.5em;
+	margin-right: 1.5em;
+}
+
+.header h1 a{
+	text-decoration:none;
+	font-weight:bold;
+	font-size:45px;
+}
+
+.header p {
+	color: #1D213E;
+	margin-right: 20em;
+	font-style: italic;
+	font-size: 14px;
+}
+
+.menu {
+	padding: 2px; 
+	margin: 0; 
+	text-align: center;
+	height: 15px;
+}
+
+#menu a:link, a:visited{
+	color: #EE9B00;
+	text-decoration: none;
+	margin-left: 2.5em;
+	margin-right: 2.5em;	
+}
+
+#menu a:hover{
+	color: #4169E1;
+	margin-left: 2.5em;
+	margin-left: 2.5em;
+}
+
+#menu a:active {
+	color: #EE9B00;
+	text-decoration: none;
+	margin-left: 2.5em;
+	margin-left: 2.5em;
+}
+
+
+.content {
+/* 	clear: right;  */
+	text-align: left; 
+	margin: 0 0 0 0; 
+	padding: 0.2em;
+	border-top: 1px solid #2A3053; 
+}
+
+.content h2 {
+	padding: 0;
+	margin: 0;
+	background-color: #FFFFFF;
+	color: #FF7F50;
+	font-size: 100%;
+	border: none;
+	font-weight: bold;
+}
+
+.footer {
+	font-size: 75%; 
+	margin: 0; 
+	padding: 0; 
+	text-align: center; 
+	clear: both;
+}
+
+.footer p { 
+	border-top: 1px solid #2A3053;
+	border-bottom: 1px solid #2A3053;
+	padding: 0.2em;
+	margin: 0;
+}

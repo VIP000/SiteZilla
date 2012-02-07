@@ -1,0 +1,290 @@
+/* Arkitkt 01 - an open source xhtml/css website layout by Scott Benedict--arkitkt.com.
+Free to use for any purpose as long as the proper credits are given to the original author.
+
+Version: 1.0 (28 Jun 2006) */
+
+
+/*global defaults*/
+
+* {   
+     padding: 0;   /*Resets padding, margin, and borders to 0 for cross-browser consistency*/
+     margin: 0;
+     border: 0; 
+}
+
+body {   
+     font-size: 62.5%;   /*Sets 1em=10px. Remember formula Childpx/Parentpx=Childem*/
+     background-color: transparent; 
+}
+
+:link, :visited {   
+     text-decoration: none;    /*Removes underline from link/visited for readability*/
+}
+
+ul, ol {
+     list-style: none;    /*Removes bullets from lists*/
+}
+
+a img, :link img, :visited img {
+     border: none;    /*Removes border images*/
+}
+
+option {
+     min-width: 1.5em;    /*Fixes mozilla problem with forms caused by universal reset*/
+}
+
+/* end global defaults */
+
+
+body {
+     background-color: #999999;
+     margin: 0 auto;
+     font-size: 1.2em; 
+}
+
+#page {
+     margin: 0 auto;
+     width: 750px;
+     position: relative;
+     top: 10px; 
+}
+
+#header {
+     background-image: url(images/header.png);
+     width: 750px;
+     height: 283px; 
+}
+
+#navbar {
+     display: inline;
+     float: right;
+     position: relative;
+     top: +19px;
+     width: 100%;
+     left: -145px;
+     z-index: 1; 
+}
+
+
+
+#navbar a {
+     color: #ffffff;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: .75em;
+}
+
+#navbar a:hover {
+     color: #650B14;
+}
+
+#home {
+     position: relative;
+     width: 75px;
+     left: 225px;
+     top: -2px; 
+}
+
+
+
+#news {
+     position: relative;
+     left: 330px;
+     top: 54px;
+     width: 75px; 
+}
+
+
+
+#links {
+     position: relative;
+     left: 460px;
+     top: 99px;
+     width: 75px; 
+}
+
+
+
+#about {
+     position: relative;
+     top: 128px;
+     width: 75px;
+     left: 620px; 
+}
+
+
+
+#contact {
+     position: relative;
+     left: 790px;
+     top:128px;
+     width: 75px; 
+}
+
+
+
+#title {
+     color: #ffffff;
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: bold;
+     text-align: right;
+     position: relative;
+     right: 35px;
+     font-size: 45px;
+     top: 85px;
+	 
+}
+
+#title a {
+	color: #FFFFFF;
+}
+
+
+#wrapper {
+     background-image: url(images/bg.png);
+     background-repeat: repeat-y;
+     width: 750px;
+     float: left; 
+}
+
+#content {
+     width: 451px;
+     position: relative;
+     float: left;
+     margin-left: 10px;
+     font-family: Arial, Helvetica, sans-serif;
+     padding-top: 10px;
+     padding-right: 10px;
+     padding-bottom: 10px;
+     padding-left: 25px; 
+}
+
+.entrytitle {
+     color: #650b14;
+     font-size: 1em;
+     padding-bottom: 5px; 
+}
+
+.entry {
+     font-family: Arial, Helvetica, sans-serif;
+     color: #5d761b;
+     text-align: justify;
+     font-size: .7em;
+     padding-bottom: 20px; 
+}
+
+.entry a {
+     color: #650b14;
+}
+
+.entry a:visited {
+     text-decoration: line-through; 
+}
+
+.entry a:hover {
+     color: #ae7e0f;
+}
+
+#submenu {
+     width: 217px;
+     float: left;
+     position: relative;
+/*      height: 100%; */
+     top: -150px;
+     z-index: 5; 
+}
+
+#submenu h3 {
+     padding-top: 25px; 
+}
+
+.menutitle {
+     font-family: Arial, Helvetica, sans-serif;
+     color: #650b14;
+     font-size: .75em;
+     text-decoration: underline overline;
+     text-align: center;
+     padding-bottom: 10px; 
+}
+
+ul a {
+     font-family: Arial, Helvetica, sans-serif;
+     color: #ae7e0f;
+     font-size: .6em;
+     text-align: center;
+     display: block;
+     padding-bottom: 5px; 
+}
+
+
+
+ul a:hover {
+     color: #5d761b;
+}
+
+.menuactive {}
+
+li {}
+
+a {}
+
+#footer {
+     width: 750px;
+     height: 180px;
+     background-image: url(images/footer.png);
+     clear: both; 
+}
+
+.copyright {
+     color: #ffffff;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: .55em;
+     position: relative;
+     top: 110px;
+     left: 25px; 
+}
+
+a:link {}
+
+a:visited {}
+
+a:hover {}
+
+a:active {}
+
+/* *** ie hacks *** */
+
+* html #navbar {
+     top: 7px;   /*ie hack*/
+}
+
+* html #home {
+     top: 10px;   /*ie hack*/
+}
+
+* html #news {
+     top: 59px;   /*ie hack*/
+}
+
+* html #links {
+     top: 102px;   /*ie hack*/
+}
+
+* html #about {
+     top: 126px;   /*ie hack*/
+}
+
+* html #contact {
+     top: 122px;
+}
+
+* html #title {
+     top: -105px;   /*ie hack*/
+}
+
+* html #slogan {
+     top: -110px;   /*ie hack*/
+}
+
+* html #submenu ul a {
+     height: 15px;
+}

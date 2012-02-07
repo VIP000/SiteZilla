@@ -1,0 +1,1 @@
+<a href="http://www.minimalistic-design.net" target="_blank" title="Minimalistic Design" alt="Minimalistic Design">Minimalistic Design</a>

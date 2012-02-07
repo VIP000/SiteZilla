@@ -1,0 +1,212 @@
+body {
+     background: url("images/bg-body.png") repeat-x scroll center top #E8F7F9;
+     color: #222222;
+     font-size: 62.5%;
+}
+
+* {
+     margin: 0pt;
+     padding: 0pt;
+}
+
+img {
+     border: 0pt none;
+}
+
+p {
+     margin-bottom: 1.75em;
+     padding: 5px;
+}
+
+a {
+     color: #B4C835;
+     text-decoration: none;
+}
+
+a:hover {
+     color: #6CC7DC;
+     text-decoration: none;
+}
+
+#wrapper {
+     background: none repeat scroll 0% 0% #FFFFFF;
+     font-size: 1.2em;
+     margin: 0pt auto;
+     width: 700px;
+}
+
+#header {
+     background: url("images/bg-header.jpg") no-repeat scroll 0% 0% transparent;
+     height: 140px;
+}
+
+#menu {
+     background: url("images/bg-menu.png") repeat-x scroll 0% 0% transparent;
+     height: 35px;
+     line-height: 35px;
+     padding: 0pt 10px;
+}
+
+#sidebar {
+     background: none repeat scroll 0% 0% #EFEFEF;
+     float: right;
+     margin-right: 10px;
+     width: 180px;
+}
+
+#content {
+     float: left;
+     min-height: 400px;
+     width: 500px;
+}
+
+#footer {
+     background: url("images/bg-footer.jpg") no-repeat scroll 0% 0% transparent;
+     clear: both;
+     height: 100px;
+}
+
+.entry {
+     line-height: 1.75em;
+     padding: 5px 10px;
+     text-align: justify;
+}
+
+.entry-title {
+     font-size: 1.9em;
+     font-weight: normal;
+     letter-spacing: -1px;
+}
+
+.date {
+     color: #BBBBBB;
+     cursor: default;
+     font-size: 0.9em;
+     letter-spacing: 1px;
+}
+
+.comments {
+     margin-top: -1em;
+}
+
+.comments a {
+     background: url("images/icon-comment.png") no-repeat scroll 0px 2px transparent;
+     color: #6CC7DC;
+     padding-left: 20px;
+     padding-right: 2px;
+}
+
+.comments a:hover {
+     color: #B4C835;
+}
+
+#menu ul {
+     list-style-type: none;
+}
+
+#menu li {
+     float: left;
+}
+
+#menu li a {
+     color: #FFFFFF;
+     display: block;
+     margin-right: 2px;
+     padding: 0pt 15px;
+}
+
+#menu li a:hover {
+     background: url("images/bg-menu-hover.png") no-repeat scroll center center transparent;
+}
+
+#sidebar ul {
+     list-style-type: none;
+     margin-top: 10px;
+}
+
+#sidebar li {
+    
+}
+
+#sidebar li a {
+     border-bottom: 1px solid #DDDDDD;
+     color: #222222;
+     display: block;
+     height: 20px;
+     line-height: 20px;
+     padding-left: 5px;
+}
+
+#sidebar li a:hover {
+     background: none repeat scroll 0% 0% #EDEBED;
+     color: #6CC4D8;
+}
+
+#sidebar-bottom {
+     background: url("images/bg-sidebar-bottom.gif") no-repeat scroll center top transparent;
+     height: 20px;
+}
+
+#footer-valid {
+     color: #FFFFFF;
+     cursor: default;
+     float: left;
+     padding-left: 20px;
+     padding-top: 55px;
+}
+
+#footer-valid a {
+     color: #FFFFFF;
+     text-decoration: none;
+}
+
+#footer-valid a:hover {
+     color: #FFFFFF;
+     text-decoration: underline;
+}
+
+h1,h2,h3,h4,h5,h6 {
+     color: #AAAAAA;
+     cursor: default;
+     font-size: 1.5em;
+     font-style: italic;
+     font-weight: normal;
+     padding-left: 15px;
+     position: relative;
+     top: 5px;
+}
+
+#feed {
+     background: url("images/bg-feed.gif") no-repeat scroll 0% 0% transparent;
+     height: 25px;
+     margin: 0pt auto;
+     padding-left: 26px;
+     width: 126px;
+}
+
+a.feed-button {
+     background: url("images/button-feed.png") no-repeat scroll 0pt 0pt transparent;
+     display: block;
+     height: 25px;
+     text-decoration: none;
+     width: 100px;
+}
+
+a.feed-button:hover {
+     background-position: 0pt -25px;
+}
+
+#ad-top {
+     background: url("images/bg-ad-top.png") no-repeat scroll 0% 0% transparent;
+     height: 72px;
+     padding: 5px;
+     width: 480px;
+}
+
+#header h1 a {
+     color: #AAAAAA;
+     font-size: 45px;
+     letter-spacing: 1px;
+     padding-left: 30px;
+     text-decoration: none;
+}

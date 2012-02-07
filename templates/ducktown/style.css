@@ -1,0 +1,152 @@
+body {
+	font-family: georgia, verdana, sans-serif;
+	font-size:12px;
+	line-height:1.6em;
+	padding-top:15px;
+	background: #f4f4f4 url(images/bg.gif) top center repeat-y;
+}
+
+hr {
+	color:#dddddd;
+	margin:25px;
+}
+
+a {
+	color:#313177;
+	text-decoration: none;
+}
+
+/*************************Header****************************/
+
+#header {
+	clear:both;
+	width:750px;
+	margin-left:auto;
+	margin-right:auto;
+	border-bottom:4px solid #CCCCCC;
+	font-size:15px;
+	padding-top:67px;
+	background:url(images/bg_ducks.gif);
+	background-repeat:no-repeat;
+}
+
+#header a {
+	text-decoration:none;
+	font-weight: bold;
+	font-size: 25px;
+	color:#000000;
+}
+
+/*************Quote in header************/
+#slogan {
+	float:right;
+	margin-top: -16px;
+	font-size: 9px;
+}
+/****************************************/
+/***********************************************************/
+
+
+
+/***********Container for left bar, center, and right bar************/
+#container {
+	width:750px;
+	margin:auto;
+}
+
+
+/**********************Left bar***********************/
+#left {
+	float:left;
+	width:138px;
+	padding-right:10px;
+}
+
+#left h3 {
+	font-size:14px;
+	margin-bottom:-7px;
+	padding-left:3px;
+}
+
+#left ul {
+	margin-left: 0;
+	padding-left: 0;
+	list-style-type:none;
+}
+
+#left li {
+	border-bottom:1px solid #dddddd;
+}
+
+#left li a {
+	border-bottom:1px solid #dddddd;
+	display:block;
+	padding:3px;
+}
+
+#left li a:hover {
+	color:#7277B1;
+	background-color: #F5F5F5;
+	display:block;
+}
+/*****************************************************/
+
+
+
+/***********************Center************************/
+#center {
+	float:left;
+	width:450px;
+	padding-top:5px;
+	margin-top:10px;
+	color:#000000;
+}
+
+.feature {
+	border-bottom:2px dotted #dddddd;
+	margin-bottom:20px;
+}
+/******************************************************/
+
+
+
+/**********************Right bar***********************/
+#right {
+	float:left;
+	width:138px;
+	padding-left:10px;
+	padding-top:15px;
+}
+
+/************Pic of the day************/
+#potm {
+	border-bottom:2px dotted #dddddd;
+	padding-bottom:10px;
+}
+/**************************************/
+
+/************Advertisement*************/
+.ad {
+	color:#999999;
+	margin-top:15px;
+	background-color:#F5F5F5;
+	border:1px solid #CCCCCC;
+	height:350px;
+	width:120px;
+}
+/**************************************/
+/******************************************************/
+/********************************************************************/
+
+
+/***********************Footer*************************/
+#footer {
+	clear:both;
+	width:750px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	font-size:10px;
+	color:#666666;
+}
+/******************************************************/

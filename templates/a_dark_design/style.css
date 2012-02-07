@@ -1,0 +1,164 @@
+body {
+margin: 0 auto;
+}
+
+body div {
+text-align: left
+}
+
+#main {
+width: 800px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 10px;
+background-color: #292929;
+}
+
+#head {
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 10px;
+text-align: center;
+height: 146px;
+width: 780px;
+background-image: url("images/head.jpg");
+background-position: center;
+background-repeat: no-repeat;
+}
+
+#head h1 {
+margin-top: 0px;
+margin-bottom: 0px;
+padding-top: 50px;
+color: #292929;
+}
+
+#head h1 a{
+margin-top: 0px;
+margin-bottom: 0px;
+padding-top: 50px;
+color: #292929;
+text-decoration: none;
+}
+
+#menu {
+float: left;
+clear: left;
+width: 140px;
+font-family: sans;
+margin-bottom: 10px;
+margin-left: 10px;
+}
+
+#menu h1 {
+padding-left: 5px;
+font-size: 14px;
+margin-top: 5px;
+margin-bottom: 5px;
+color: #676767;
+}
+
+#menu a {
+color: #000000;
+padding-left: 5px;
+padding-top: 5px;
+padding-bottom: 5px;
+text-decoration: none;
+display: block;
+background-color: #575757;
+border-bottom: 1px solid #292929;
+}
+
+#menu a:hover {
+background-color: #676767;
+}
+
+#sidegallery {
+float: right;
+clear: right;
+width: 130px;
+text-align: left;
+margin-bottom: 10px;
+margin-right: 10px;
+}
+
+a img {
+border: 2px solid #575757;
+margin-bottom: 5px;
+margin-left: 5px;
+margin-right: 5px;
+}
+
+a:hover img {
+border: 2px solid #676767;
+}
+
+#content {
+font-family: serif;
+padding: 5px;
+margin-left: 160px;
+margin-right: 160px;
+margin-bottom: 10px;
+width: 460px;
+background-color: #575757;
+color: #292929;
+}
+
+#content h1, h2, h3, h4, h5, h6{
+margin-top: 5px;
+margin-bottom: 0px;
+color: #292929;
+}
+
+#content h1{
+font-size: 26px;
+}
+
+#content h2{
+font-size: 24px;
+}
+
+#content h3{
+font-size: 22px;
+}
+
+#content h4{
+font-size: 20px;
+}
+
+#content h5{
+font-size: 18px;
+}
+
+#content h6{
+font-size: 16px;
+}
+
+#content a {
+text-decoration: none;
+color: #292929;
+font-style: italic;
+}
+
+#content a:hover {
+text-decoration: underline;
+}
+
+#foot {
+text-align: center;
+color: #676767;
+font-size: 12px;
+padding: 7px;
+}
+
+#foot a {
+color: #676767;
+text-decoration: none;
+font-style: italic;
+}
+
+#foot a:hover {
+text-decoration: underline;
+}
+
+

@@ -1,0 +1,220 @@
+
+body {
+    background: url("images/back.gif") repeat fixed 0 0 transparent;
+    font-family: Verdana,Arial,Sans-serif;
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+p {
+    line-height: 1.7em;
+    margin-bottom: 16px;
+    text-align: justify;
+}
+#header h1 a {
+    border-bottom: medium none;
+    color: black;
+    height: 0;
+    margin: 4px 0;
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+    font-weight: normal;
+}
+a:link, a:visited {
+    color: #570BC0;
+    text-decoration: none;
+}
+a:active, a:hover {
+    border-bottom: 1px solid #3B866B;
+}
+a img {
+    border: medium none;
+}
+#content h1, h2, h3 {
+    margin: 4px 0;
+    padding: 4px 0;
+}
+#content h1 {
+    clear: both;
+    color: #3D055A;
+    font-family: Tahoma,Verdana,Sans-serif;
+    font-size: 1.7em;
+    font-weight: normal;
+    letter-spacing: 0.08em;
+/*    text-align: center;
+    padding-top: 10px;*/
+}
+h2 {
+    border-bottom: 1px dotted #D6F1E8;
+    color: #045439;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+h3 {
+    color: #147794;
+    font-size: 1.4em;
+    font-weight: normal;
+}
+.print_only {
+    display: none;
+}
+#wrapper {
+    background: url("images/back_top.gif") repeat-x fixed 0 0 transparent;
+    text-align: center;
+    width: 100%;
+}
+#main {
+    background: none repeat scroll 0 0 #FFFFFF;
+    margin: 0 auto;
+    padding: 20px 0;
+    width: 600px;
+}
+#footer, #sub_nav, #top_nav {
+    color: #779900;
+    margin-bottom: 1px;
+    padding: 4px 16px;
+    text-align: center;
+}
+#top_nav {
+    background: none repeat scroll 0 0 #CCFF00;
+    font-size: 1.4em;
+    text-align: center;
+}
+#footer, #sub_nav {
+    background: none repeat scroll 0 0 #E2FF70;
+    font-size: 1.2em;
+    padding: 5px 16px;
+}
+#top_nav a:link, #top_nav a:visited {
+    color: #336600;
+}
+#top_nav a:hover, #top_nav a:active {
+    color: #000000;
+}
+#sub_nav a:link, #sub_nav a:visited {
+    color: #336600;
+}
+#top_nav a:hover, #top_nav a:active, #sub_nav a:hover, #sub_nav a:active {
+    border-bottom: 5px solid #3B866B;
+    color: #000000;
+}
+#header {
+    background: url("images/header1.jpg") no-repeat scroll right top white;
+/*     height: 69px; */
+    margin-bottom: 3px;
+    padding: 0 12px 0;
+    text-align: left;
+}
+
+#page {
+    background: url("images/content_bg.gif") repeat-x scroll center top white;
+    padding-top: 10px;
+    text-align: left;
+}
+#content {
+    background: none repeat scroll 0 0 #FFFFFF;
+    float: left;
+    padding-left: 16px;
+    padding-top: 12px;
+    width: 740px;
+}
+#content a:active, #content a:hover {
+    color: #7009FD;
+}
+#side {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-top: 1px solid white;
+    color: #4D6B6C;
+    float: right;
+    padding: 16px;
+}
+#footer {
+    border-top: 1px solid #164579;
+    clear: both;
+    font-size: 0.8em;
+    padding: 4px 16px;
+}
+#footer a:link, #footer a:visited {
+    color: #389015;
+}
+.one_column #content {
+    float: none;
+    width: 708px;
+}
+.one_column #side {
+    display: none;
+}
+.two_column #content {
+    width: 460px;
+}
+.two_column #side {
+    width: 216px;
+}
+.menu {
+    border-top: 1px solid white;
+    display: block;
+    list-style: none outside none;
+    margin: 0 -16px;
+    padding: 0;
+}
+.menu ul {
+    display: block;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    border: medium none;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.menu li a:link, .menu li a:visited {
+    background: none repeat scroll 0 0 #D5ECF1;
+    border-bottom: 1px solid white !important;
+    color: #008800;
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: 0.12em;
+    margin: 0;
+    padding: 8px 16px;
+}
+* html .menu a, * html .menu li {
+    height: 1px;
+}
+.menu li li a:link, .menu li li a:visited {
+    background: none repeat scroll 0 0 #EFF5F6;
+    color: #004400;
+    font-size: 1em;
+    font-weight: normal;
+    letter-spacing: 0.04em;
+}
+.menu a:link, .menu a:visited, .menu a:hover {
+    text-decoration: none !important;
+}
+.menu li li a:hover {
+    background-color: #E2FF70 !important;
+}
+.side_decor {
+    float: left;
+    margin: 12px 16px 12px 0;
+}
+#page:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+#page {
+    display: table;
+}
+html #page {
+    height: 1%;
+}
+#page {
+    display: block;
+}

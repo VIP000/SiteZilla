@@ -1,0 +1,1 @@
+<a href="http://www.animatedbanner.com/" target="_blank" alt="AnimatedBanner.com" title="AnimatedBanner.com">AnimatedBanner.com</a>

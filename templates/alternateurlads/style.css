@@ -1,0 +1,118 @@
+/* CSS Document */
+
+body{
+	background-image:url(images/bg.jpg);
+	background-repeat:repeat-x;
+	font-family:Trebuchet MS, Helvetica, sans-serif;
+	font-size:14px;
+	letter-spacing: -1px;
+}
+
+.outer{
+width:760px;
+clear:both;
+margin-left:auto;
+margin-right:auto;}
+
+.header{
+padding-left:30px;
+padding-top:52px;
+padding-right:30px;
+}
+
+.nav-box{
+width:292px;
+float:right;
+margin-top:15px;
+font-weight:bold;
+color:#006699;
+font-size:13px;}
+
+.mid-section{
+padding-top:20px;}
+
+.content_area{
+padding-left:30px;
+padding-right:30px;
+padding-top:30px;
+}
+
+.sub_nav{
+float:left;
+width:180px;
+margin-right:25px;
+margin-top:15px;
+}
+
+.noticebox 
+{ background-color: #FFFFBF; 
+border: 1px solid #808080; 
+padding: 5px; 
+text-align: center; 
+}
+.noticebox h1 { 
+border-bottom: 1px solid #808080; 
+font-size: 95%;}
+.small { 
+font-size: 90%; 
+}
+
+.footer{
+text-align:center;
+font-size:10px;
+padding-left:30px;
+padding-right:30px;
+padding-top:10px;
+clear:both;
+}
+
+A {
+font-style: normal;
+color: #006699;
+text-decoration: none;
+}
+
+A:hover {
+font-style: normal;
+color: #15A300;
+text-decoration: none;
+}
+
+A:visited:hover {
+font-style: normal;
+color: #15A300;
+text-decoration: none;
+}
+
+.style1 {
+	font-size: 18px;
+	font-weight: bold;
+	color: #15a300;
+}
+.style2 {
+	color: #000000;
+	font-weight: bold;
+}
+
+.ad_box{
+width:142px; 
+height:342px;
+padding-top:5px; 
+padding-left:19px;
+padding-right:19px;
+background-image:url(images/side_banner.gif);
+background-repeat:no-repeat;
+text-align:center;
+}
+
+.banner{
+font-size:10px;
+padding-left:5px;
+text-align:left;}
+
+.title{
+	font-size:28px;
+	font-weight:bold;
+	letter-spacing: -3px;
+	color:#006699;
+}

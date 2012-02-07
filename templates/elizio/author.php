@@ -1,0 +1,1 @@
+<a href="http://blog.sweetpeople.org" target="_blank" alt="Mallory Mollo" title="Mallory Mollo">Mallory Mollo</a>

@@ -1,0 +1,138 @@
+
+
+body {
+	background: #3a4e63 url('images/bg.gif');
+ 	text-align: left; 
+	min-width: 760px;
+}
+
+div#main {
+/* 	float:right; */
+	margin-left: auto;
+	margin-right: auto;
+	width: 760px;
+}
+
+div#menu a {
+	display: block;
+	width: 100px;
+	float: left;
+	margin-left: 6px;
+	background: #ffffff;
+	height: 22px;
+}
+
+div#wrapper {
+	width: 700px;
+	text-align: center;
+	padding: 8px 8px 8px 8px;
+	background: #ffffff;
+	clear:both;
+}
+
+
+/* -- formatting -- */
+
+div#content {
+	font-family: trebuchet ms,verdana,arial,serif;
+	font-size: 8pt;
+	font-weight: normal;
+	letter-spacing: 1.1pt;
+	padding-left: 40px;
+	padding-top: 5px;
+	padding-right: 70px;
+	padding-bottom: 5px;
+	text-align: left;
+	background: #c0c0c0;
+	border-bottom: 5px solid #697a85;
+}
+
+div#footer {
+	margin-top: 10px;
+	font-family: trebuchet ms,verdana,arial,serif;
+	font-size: 8pt;
+	text-align: center;
+/* 	text-transform: lowercase; */
+	color: #000000;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 14pt;
+	font-family: trebuchet ms,verdana,arial,serif;
+	letter-spacing: 1.1pt;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 13pt;
+	font-family: trebuchet ms,verdana,arial,serif;
+	letter-spacing: 1.1pt;
+}
+
+div#menu a {
+	font-family: trebuchet ms,verdana,arial,serif;
+	font-weight: bold;
+	font-size: 9pt;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding-left: 15px;
+	border: 1px solid #000000;
+	border-bottom: 0;
+	background: #eaeeee;
+}
+
+
+div#menu a:hover {
+	font-family: trebuchet ms,verdana,arial,serif;
+	font-weight: bold;
+	font-size: 9pt;
+	color: #000000;
+	background: #ffffff;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+
+a {
+	font-weight: bold;
+	text-transform: lowercase;
+	color: #000000;
+}
+
+div#wrapper {
+	border: 1px solid #000000;
+	text-align: center;
+}
+
+div#logo {
+	height: 140px;
+	width: 690px;
+	padding-top: 25px;
+	text-align: right;
+	padding-right: 10px;
+	background: url('images/bluetree.gif');
+	background-repeat: no-repeat;
+	padding-bottom: 5px;
+	border-top: 8px solid #576a81;
+	border-bottom: 10px solid #576a81;
+}
+
+div#topbar {
+	font-family: trebuchet ms,verdana,arial,serif;
+	font-size: 13px;
+	color: #000000;
+	letter-spacing: 1.1pt;
+	font-weight: normal;
+	padding-top: 1px;
+	padding-left: 25px;
+	text-align: left;
+	width: 675px;
+	padding-bottom: 4px;
+	background: #ffffff;
+}
+
+div#topbar a {
+	text-decoration: none;
+}
+
+	

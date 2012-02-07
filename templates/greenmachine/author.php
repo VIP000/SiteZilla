@@ -1,0 +1,1 @@
+<a href="http://www.ajindustries.co.nr" target="_blank" alt="AJ Industries" title="AJ Industries Australia Website design">AJ Industries</a>

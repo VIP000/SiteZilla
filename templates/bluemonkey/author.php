@@ -1,0 +1,1 @@
+<a href="http://www.idavista.com" target="_blank" title="Bryan Lass" alt="Bryan Lass">Bryan Lass</a>
