@@ -1,0 +1,1 @@
+This is a message that will appear on all the user profiles when they are logged in. This message can be changed in the pages/profile_message.php file.

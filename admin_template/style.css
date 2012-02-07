@@ -1,0 +1,926 @@
+/* *************************************************************************
+// *                                                                       *
+// * SiteZilla - Creates small static websites                             *
+// * Copyright (c) 2011 SiteZilla. All Rights Reserved,                    *
+// *                                                                       *
+// *************************************************************************
+// *                                                                       *
+// * Email: info@sitezilla.co.za                                           *
+// * Website: http://www.sitezilla.co.za/                                  *
+// *                                                                       *
+// *************************************************************************
+// *                                                                       *
+// * This program is free software: you can redistribute it and/or modify  *
+// * it under the terms of the GNU General Public License as published by  *
+// * the Free Software Foundation, either version 3 of the License, or     *
+// * (at your option) any later version.                                   *
+// *                                                                       *
+// * This program is distributed in the hope that it will be useful,       *
+// * but WITHOUT ANY WARRANTY; without even the implied warranty of        *
+// * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         *
+// * GNU General Public License for more details.                          *
+// *                                                                       *
+// * You should have received a copy of the GNU General Public License     *
+// * along with this program.  If not, see <http://www.gnu.org/licenses/>. *
+// *                                                                       *
+// ************************************************************************/
+html, body{
+    margin:0;
+    padding:0;
+    text-align:center;
+    background-color: #585858;
+    background-image: url('images/bg.png');
+    background-repeat: repeat;
+}
+img {
+	border:none;
+}
+ /* =============================================================================================================================  */
+
+.Post {
+    margin: 0 auto;
+    min-height: 11px;
+    min-width: 11px;
+    position: relative;
+    z-index: 0;
+}
+.Post-body {
+    padding: 9px;
+    position: relative;
+    z-index: 1;
+}
+.Post-tr, .Post-tl, .Post-br, .Post-bl, .Post-tc, .Post-bc, .Post-cr, .Post-cl {
+    position: absolute;
+    z-index: -1;
+}
+.Post-tr, .Post-tl, .Post-br, .Post-bl {
+    background-image: url("images/Post-s.png");
+    height: 10px;
+    width: 10px;
+}
+.Post-tl {
+    clip: rect(auto, 5px, 5px, auto);
+    left: 0;
+    top: 0;
+}
+.Post-tr {
+    clip: rect(auto, auto, 5px, 5px);
+    right: 0;
+    top: 0;
+}
+.Post-bl {
+    bottom: 0;
+    clip: rect(5px, 5px, auto, auto);
+    left: 0;
+}
+.Post-br {
+    bottom: 0;
+    clip: rect(5px, auto, auto, 5px);
+    right: 0;
+}
+.Post-tc, .Post-bc {
+    background-image: url("images/Post-h.png");
+    height: 10px;
+    left: 5px;
+    right: 5px;
+}
+.Post-tc {
+    clip: rect(auto, auto, 5px, auto);
+    top: 0;
+}
+.Post-bc {
+    bottom: 0;
+    clip: rect(5px, auto, auto, auto);
+}
+.Post-cr, .Post-cl {
+    background-image: url("images/Post-v.png");
+    bottom: 5px;
+    top: 5px;
+    width: 10px;
+}
+.Post-cr {
+    clip: rect(auto, auto, auto, 5px);
+    right: 0;
+}
+.Post-cl {
+    clip: rect(auto, 5px, auto, auto);
+    left: 0;
+}
+.Post-cc {
+    background-color: #A0A0A0;
+    bottom: 5px;
+    left: 5px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    z-index: -1;
+}
+.Post {
+    margin: 7px;
+}
+.PostContent {
+    color: #000000;
+    font-family: Comic Sans MS;
+    text-align: justify;
+}
+.article img, img.article {
+    margin: 1em;
+}
+.metadata-icons img {
+    border: medium none;
+    margin: 2px;
+    vertical-align: middle;
+}
+.article {
+    color: #1A1A1A;
+    font-family: Comic Sans MS;
+    font-size: 14px;
+	font-weight:normal;
+}
+.article p {
+    color: #1A1A1A;
+    font-family: Comic Sans MS;
+    font-size: 14px;
+	font-weight:normal;
+}
+.article h1,h2,h3,h4,h5,h6 {
+    color: #1A1A1A;
+    font-family: Comic Sans MS;
+    font-size: 16px;
+}
+.cleared {
+    border: medium none;
+    clear: both;
+    float: none;
+    font-size: 1px;
+    margin: 0;
+    padding: 0;
+}
+
+ /* =============================================================================================================================  */
+
+ .Block {
+    margin: 0 auto;
+    min-height: 11px;
+    position: relative;
+    min-width: 11px;
+    z-index: 0;
+}
+.Block {
+    margin: 7px;
+}
+.Block-tr, .Block-tl, .Block-br, .Block-bl, .Block-tc, .Block-bc, .Block-cr, .Block-cl {
+    position: absolute;
+    z-index: -1;
+}
+.Block-tr, .Block-tl, .Block-br, .Block-bl {
+    background-image: url("images/Block-s.png");
+    height: 10px;
+    width: 10px;
+}
+.Block-tl {
+    clip: rect(auto, 5px, 5px, auto);
+    left: 0;
+    top: 0;
+}
+.Block-tr {
+    clip: rect(auto, auto, 5px, 5px);
+    right: 0;
+    top: 0;
+}
+.Block-bl {
+    bottom: 0;
+    clip: rect(5px, 5px, auto, auto);
+    left: 0;
+}
+.Block-br {
+    bottom: 0;
+    clip: rect(5px, auto, auto, 5px);
+    right: 0;
+}
+.Block-tc, .Block-bc {
+    background-image: url("images/Block-h.png");
+    height: 10px;
+    left: 5px;
+    right: 5px;
+}
+.Block-tc {
+    clip: rect(auto, auto, 5px, auto);
+    top: 0;
+}
+.Block-bc {
+    bottom: 0;
+    clip: rect(5px, auto, auto, auto);
+}
+.Block-cr, .Block-cl {
+    background-image: url("images/Block-v.png");
+    bottom: 5px;
+    top: 5px;
+    width: 10px;
+}
+.Block-cr {
+    clip: rect(auto, auto, auto, 5px);
+    right: 0;
+}
+.Block-cl {
+    clip: rect(auto, 5px, auto, auto);
+    left: 0;
+}
+.Block-cc {
+    background-color: #050505;
+    bottom: 5px;
+    left: 5px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    z-index: -1;
+}
+.Block-body {
+    padding: 1px;
+    position: relative;
+    z-index: 1;
+}
+.BlockHeader {
+    height: 30px;
+    margin-bottom: 2px;
+    padding: 0 8px;
+    position: relative;
+    z-index: 0;
+}
+.BlockHeader .t {
+    color: #BCB8B8;
+    font-family: Comic Sans MS;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 8px;
+    white-space: nowrap;
+}
+.BlockHeader .t h2.subject {
+    color: #BCB8B8;
+    font-family: Comic Sans MS;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0 8px;
+    top: 0;
+    white-space: nowrap;
+}
+.BlockHeader .l, .BlockHeader .r {
+    background-image: url("images/BlockHeader.png");
+    display: block;
+    height: 30px;
+    position: absolute;
+    z-index: -1;
+}
+.BlockHeader .l {
+    left: 0;
+    right: 5px;
+}
+.BlockHeader .r {
+    clip: rect(auto, auto, auto, 995px);
+    right: 0;
+    width: 1000px;
+}
+.BlockContent {
+    margin: 0 auto;
+    min-height: 11px;
+    min-width: 11px;
+    position: relative;
+    z-index: 0;
+}
+.BlockContent-body {
+    padding: 8px;
+    position: relative;
+    z-index: 1;
+}
+.BlockContent-tr, .BlockContent-tl, .BlockContent-br, .BlockContent-bl, .BlockContent-tc, .BlockContent-bc, .BlockContent-cr, .BlockContent-cl {
+    position: absolute;
+    z-index: -1;
+}
+.BlockContent-tr, .BlockContent-tl, .BlockContent-br, .BlockContent-bl {
+    background-image: url("images/BlockContent-s.png");
+    height: 10px;
+    width: 10px;
+}
+.BlockContent-tl {
+    clip: rect(auto, 5px, 5px, auto);
+    left: 0;
+    top: 0;
+}
+.BlockContent-tr {
+    clip: rect(auto, auto, 5px, 5px);
+    right: 0;
+    top: 0;
+}
+.BlockContent-bl {
+    bottom: 0;
+    clip: rect(5px, 5px, auto, auto);
+    left: 0;
+}
+.BlockContent-br {
+    bottom: 0;
+    clip: rect(5px, auto, auto, 5px);
+    right: 0;
+}
+.BlockContent-tc, .BlockContent-bc {
+    background-image: url("images/BlockContent-h.png");
+    height: 10px;
+    left: 5px;
+    right: 5px;
+}
+.BlockContent-tc {
+    clip: rect(auto, auto, 5px, auto);
+    top: 0;
+}
+.BlockContent-bc {
+    bottom: 0;
+    clip: rect(5px, auto, auto, auto);
+}
+.BlockContent-cr, .BlockContent-cl {
+    background-image: url("images/BlockContent-v.png");
+    bottom: 5px;
+    top: 5px;
+    width: 10px;
+}
+.BlockContent-cr {
+    clip: rect(auto, auto, auto, 5px);
+    right: 0;
+}
+.BlockContent-cl {
+    clip: rect(auto, 5px, auto, auto);
+    left: 0;
+}
+.BlockContent-cc {
+    background-image: url("images/BlockContent-c.png");
+    bottom: 5px;
+    left: 5px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    z-index: -1;
+}
+.BlockContent-body {
+    color: #1A1A1A;
+    font-family: Comic Sans MS;
+    font-size: 12px;
+}
+.BlockContent-body a:link {
+    color: #000000;
+    font-family: Comic Sans MS;
+    text-decoration: underline;
+}
+.BlockContent-body a:visited, .BlockContent-body a.visited {
+    color: #4D4D4D;
+    font-family: Comic Sans MS;
+    text-decoration: underline;
+}
+.BlockContent-body a:hover, .BlockContent-body a.hover {
+    color: #F7F7F7;
+    font-family: Comic Sans MS;
+    text-decoration: none;
+}
+.BlockContent-body ul {
+    color: #000000;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.BlockContent-body li {
+    font-family: Comic Sans MS;
+    font-size: 11px;
+}
+.BlockContent-body ul li {
+    background-image: url("images/BlockContentBullets.png");
+    background-repeat: no-repeat;
+    line-height: 1.2em;
+    margin: 0.5em 0;
+    padding: 0 0 0 16px;
+}
+.BlockContent-body .links li {
+    background-image: none;
+    float: left;
+    padding: 0 0 0 1em;
+}
+.BlockContent-body .calendar-calendar td a:hover {
+    text-decoration: underline;
+}
+.BlockContent-body table td.mini a {
+    font-weight: normal;
+}
+.BlockContent-body table td div.mini-day-on a {
+    text-decoration: underline;
+}
+.BlockContent-body .calendar-calendar td a {
+    text-decoration: none;
+}
+
+/* =============================================================================================================================  */
+
+#main{
+    width:850px;
+    text-align:left;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+#passwbox {
+	background: url('images/passbox.png') top center no-repeat;
+	width: 250px;
+	height: 207px;
+	text-align: center;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#passwbox p {
+	text-align: center;
+	height:25px;
+	padding:0;
+	margin:0;
+	font-weight:bold;
+	font-size:12px;
+}
+
+
+#passwbox input {
+	width: 210px;
+ 	padding: 4px 10px 5px 10px;
+	border: 0px;
+	background:url('images/field.png') top center no-repeat;
+ 	font-size: 16px;
+}
+
+#passwbox .button {
+	background: url('images/submit_button.png') top center no-repeat;
+	display:inline;
+}
+
+#loginbox {
+	background: url('images/login.png') top center no-repeat;
+	width: 500px;
+	height: 207px;
+	text-align: center;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#loginbox p {
+	text-align: left;
+	height:25px;
+	padding:15px 0 0 20px;
+	margin:15px 0 0 5px;
+	font-weight:bold;
+	font-size:12px;
+}
+
+#loginbox td {
+	height: 28px;
+}
+
+#loginbox input {
+	width: 210px;
+ 	padding: 4px 10px 5px 10px;
+	border: 0px;
+	background:url('images/field.png') top center no-repeat;
+ 	font-size: 16px;
+}
+
+#loginbox .button {
+	background: url('images/submit_button.png') top center no-repeat;
+	display:inline;
+}
+
+#registerbox {
+	background: url('images/register.png') top center no-repeat;
+	width: 300px;
+	height: 512px;
+	text-align: center;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#registerbox p {
+	text-align: left;
+	height:25px;
+	padding:0;
+	margin:5px 0 0 5px;
+	font-weight:bold;
+	font-size:12px;
+}
+
+#registerbox td {
+	height: 28px;
+}
+
+#registerbox-input {
+	background: url('images/field.png') top center no-repeat;
+	display:inline;
+	margin:0 0 2px 0;
+}
+
+#registerbox input {
+	width: 210px;
+ 	padding: 4px 10px 5px 10px;
+	border: 0px;
+	background:url('images/field.png') top center no-repeat;
+ 	font-size: 16px;
+}
+
+#registerbox .button {
+	background: url('images/register_button.png') top center no-repeat;
+	display:inline;
+}
+
+#templatename {
+	display:block;
+/*  	background-color: #626762;   */
+	color: #626762;
+/* 	margin-top: 5px; */
+/* 	margin-left: 10px; */
+/* 	margin-right: 10px; */
+	font-family: Comic Sans MS;
+	font-size: 18px;
+
+}
+
+#templateselect {
+	display:block;
+	background-color: #000000;
+	margin-left: 1px;
+	margin-right: 1px;
+	color: yellow;
+	font-size: 12px;
+	font-family: Comic Sans MS;
+}
+
+#templatebox {
+	background: #A3A3A3 url('images/templatebox.png') no-repeat;
+	width: 160px;
+	height: 160px;
+	text-align: center;
+}
+
+#templatebox img {
+	background-color: #A3A3A3;
+	width: 140px;
+	height: 90px;
+	text-align: center;
+}
+
+#pagnat {
+	text-align: center;
+
+}
+
+#pagnat a {
+	text-decoration: none;
+	color: yellow;
+}
+
+#pactive a{
+	color: red;
+}
+
+#pagnat a:hover {
+	color: white;
+}
+
+#author {
+	display:block;
+	background-color: #626762;
+	margin-left: 1px;
+	margin-right: 1px;
+	color: #FFF;
+	font-size: 12px;
+	font-family: Comic Sans MS;
+}
+
+#authorname {
+/* 	color: red; //Change color to show Authors without links*/
+	color: #626762;
+	font-size: 12px;
+}
+
+#authorname a {
+	text-decoration: none;
+	color: #626762;
+}
+
+#header{
+    position:relative;
+    height:122px;
+/*     background-color:#363636; */
+    background-image: url('images/header.jpg');
+    background-repeat: no-repeat;
+    width:100%;
+}
+
+#action_links{
+	text-align: center;
+	padding-top: 34px;
+}
+
+#textlink {
+	font-weight:bold;
+	font-size:12px;
+	color: red;
+}
+
+#szmenu {
+
+	position: fixed;
+	top: 0px;
+	left: 100%;
+	width: 100%;
+	margin-left: -100%;
+
+}
+
+#sznavigation {
+	margin:0;
+	padding: 0;
+	clear:both;
+	/*width:950px;*/
+	height:51px;
+	background: #363636 url(images/szdropdown-bg.gif) repeat-x left top;
+}
+
+
+ul.sznav-main,
+ul.sznav-main li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+ul.sznav-main {
+	position: relative;
+	z-index: 597;
+}
+
+ul.sznav-main li:hover > ul {
+	visibility: visible;
+}
+
+
+ul.sznav-main li.hover,
+ul.sznav-main li:hover {
+	position: relative;
+	z-index: 599;
+	cursor: pointer;
+	background: #676767 url(images/szdropdown-bg-hover.gif) repeat-x left top;
+}
+
+
+
+ul.sznav-main li {
+	float:left;
+	display:block;
+	height: 51px;
+	color: #999;
+	font: 14px Arial, Helvetica, sans-serif;
+	background: url(images/szseparator.gif) no-repeat right center;
+}
+
+ul.sznav-main li a {
+	display:block;
+	padding: 16px 16px 0 16px;
+	height: 35px;
+	color: #999;
+	font: 14px Arial, Helvetica, sans-serif;
+	text-decoration:none;
+}
+
+ul.sznav-main li a:hover {
+	color:#D6D6D6;
+}
+
+
+
+ul.sznav-main *.list {
+	padding-right: 22px;
+	background: url(images/sznavigation-arrow.gif) no-repeat right top;
+}
+
+
+
+ul.sznav-sub {
+	visibility: hidden;
+	position: absolute;
+	padding:10px;
+	top: 48px;
+	left: 0;
+	z-index: 598;
+	background: #4e4e4e url(images/szdropdown-list-bg.gif) repeat-x left top;
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+	border-left: 1px solid #000;
+}
+
+
+ul.sznav-sub li {
+	list-style:none;
+	display:block;
+	padding: 0;
+	height: 27px;
+	float: none;
+	width:145px;
+	border-bottom: 1px solid #4e0d0d;
+	background: none;
+}
+
+ul.sznav-sub li a {
+	list-style:none;
+	display:block;
+	padding: 6px 5px 6px 5px;
+	height: 15px;
+	float: none;
+	width:145px;
+	background: none;
+	font: 12px Arial, Helvetica, sans-serif;
+}
+
+#step_links {
+	float:right;
+}
+
+#content{
+    background-color: #4e4e4e;
+    background-image: url('images/body.jpg');
+    background-repeat: repeat-y;
+    min-height:350px;
+    display:block;
+    position: relative;
+	padding:10px;
+}
+
+#footer{
+	/*     background-color: #717171;  */
+	height:52px;
+	background-image: url('images/footer.jpg');
+	background-repeat: no-repeat;
+	clear:both;
+	font-size:10px;
+	padding-top:12px;
+	text-align:center;
+}
+
+#footer a {
+	color:#d5594d;
+	text-decoration: none;
+	font-weight:bold;
+}
+
+
+
+ /* *** Float containers fix:
+ http://www.csscreator.com/attributes/containedfloat.php *** */
+.clearfix:after {
+ content: ".";
+ display: block;
+height: 0;
+ clear: both;
+ visibility: hidden;
+ }
+
+.clearfix{display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .clearfix{height: 1%;}
+.clearfix{display: block;}
+/* End hide from IE-mac */
+
+
+
+ /*printer styles*/
+ @media print{
+/*hide the left column when printing*/
+#menu{display:none;}
+#twocols, #content{width:100%; float:none;}
+}
+
+/* begin Button */
+.button-wrapper a.button,
+.button-wrapper a.button:link,
+.button-wrapper input.button,
+.button-wrapper button.button
+{
+  text-decoration: none;
+  font-family: Arial, Helvetica, Sans-Serif;
+  font-size: 13px;
+  font-weight:bold;
+  position:relative;
+  top:0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: center;
+  color: #1F1F1F !important;
+  width: auto;
+  outline: none;
+  border: none;
+  background: none;
+  line-height: 32px;
+  height: 32px;
+  margin: 0 !important;
+  padding: 0 16px !important;
+  overflow: visible;
+  cursor: pointer;
+}
+
+.button img, .button-wrapper img
+{
+  margin: 0;
+  vertical-align: middle;
+}
+
+.button-wrapper
+{
+  vertical-align: middle;
+  display: inline-block;
+  position: relative;
+  height: 32px;
+  overflow: hidden;
+  white-space: nowrap;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  z-index: 0;
+}
+
+.firefox2 .button-wrapper
+{
+  display: block;
+  float: left;
+}
+
+input, select, textarea
+{
+  vertical-align: middle;
+  font-family: Arial, Helvetica, Sans-Serif;
+  font-size: 13px;
+}
+
+.block select
+{
+    width:96%;
+}
+
+.button-wrapper.hover .button, .button-wrapper.hover a.button:link, .button:hover
+{
+  color: #1C1C1C !important;
+  text-decoration: none !important;
+}
+
+.button-wrapper.active .button, .button-wrapper.active a.button:link
+{
+  color: #DBDBDB !important;
+}
+
+.button-wrapper .button-l, .button-wrapper .button-r
+{
+  display: block;
+  position: absolute;
+  height: 106px;
+  margin: 0;
+  padding: 0;
+  background-image: url('images/szbutton.png');
+}
+
+.button-wrapper .button-l
+{
+  left: 0;
+  right: 9px;
+}
+
+.button-wrapper .button-r
+{
+  width: 407px;
+  right: 0;
+  clip: rect(auto, auto, auto, 398px);
+}
+
+.button-wrapper.hover .button-l, .button-wrapper.hover .button-r
+{
+  top: -37px;
+}
+
+.button-wrapper.active .button-l, .button-wrapper.active .button-r
+{
+  top: -74px;
+}
+
+.button-wrapper input
+{
+  float: none !important;
+}
+/* end Button */
