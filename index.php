@@ -32,6 +32,7 @@ if(isset($_GET['items_per_page']))
 		$_SESSION['items_per_page'] = $_GET['items_per_page'];
 
 include_once('inc/core.php');
+include_once('inc/template.php');
 // include_once('functions/functions.php');
 
 $nrgic = '';
@@ -50,7 +51,6 @@ if(isset($_POST['user']) && isset($_POST['pass'])){
 		}
   }
 
-include_once('translations/en.php');
 include_once('functions/validation.php');
 $index_page = array();
 $index_page = getIndexValue();
@@ -75,7 +75,7 @@ switch($index_page[0]) {
 		showError();
 	break;
 	case 'templates':
-			showTemplates(0,$index_page[1],0);
+			Template::show_templates(0,$index_page[1],0);
 	break;
 	case 'index':
 		show_page('index');
@@ -110,7 +110,7 @@ switch($index_page[0]) {
 				elseif($_POST['account_active'] <> 0)
 					$regmsg = translate('Hack attempt detected. Data logged and submitted to administrators.',sz_config('language'));
 				elseif(isValid($_POST['group'],'number') == false)
-					$regmsg = translate('Hack attempt detected. Data logged and submitted to administrators.',sz_config('language'));;
+					$regmsg = translate('Hack attempt detected. Data logged and submitted to administrators.',sz_config('language'));
 				elseif(isValid($_POST['phone'],'phone') == false)
 					$regmsg = translate('The phone number that you\'ve entered is invalid.',sz_config('translate'));
 				elseif((strlen($_POST['user_website']) > 0) && (isValid($_POST['user_website'],'website') == false))

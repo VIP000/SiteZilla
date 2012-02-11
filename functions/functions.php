@@ -326,80 +326,6 @@ $db->connect();
     	return @round($size/pow(1024,($i=floor(log($size,1024)))),2).' '.$unit[$i];
  	}
 
-	function icon($action,$size = NULL,$alt = false) {
-		if($size == NULL) $size = '16px';
-		if(is_numeric($action)) {
-			settype($action,"string");
-			$icon = '';
-			if($alt == true) {
-				for($i=0;$i<strlen($action);$i++) {
-					$imgnum = substr($action,$i,1);
-					if($i == 0)
-						$options = 'alt="'.niceName($action).'" title="'.niceName($action).	'"';
-					else
-						$options = '';
-					$icon .= '<img src="images/'.$imgnum.'_alt.png" height="'.$size.'" '.$options.'>';
-				}
-			} else {
-				for($i=0;$i<strlen($action);$i++) {
-					$imgnum = substr($action,$i,1);
-					if($i == 0)
-						$options = 'alt="'.niceName($action).'" title="'.niceName($action).	'"';
-					else
-						$options = '';
-					$icon .= '<img src="images/'.$imgnum.'.png" height="'.$size.'" '.$options.'>';
-				}
-			}
-			return $icon;
-		} else
-		switch($action){
-		case 'space':
-			$icon = '<img src="images/space.png" height="'.$size.'" alt="&nbsp;">';
-			return $icon;
-		break;
-		case '.':
-			$icon = '<img src="images/point.png" height="'.$size.'"">';
-			return $icon;
-		break;
-  		case 'down':
-			$icon = '<img src="images/down.png" height="'.$size.'" width="'.$size.'" alt="'.MSG00084.'" title="'.MSG00084.'">';
-			return $icon;
-  		break;
-  		case 'up':
-			$icon = '<img src="images/up.png" height="'.$size.'" width="'.$size.'" alt="'.MSG00085.'" title="'.MSG00085.'">';
-			return $icon;
-  		break;
-  		case 'first':
-			$icon = '<img src="images/first.png" height="'.$size.'" width="'.$size.'" alt="['.MSG00086.']" title="'.MSG00086.'">';
-			return $icon;
-  		break;
-  		case 'last':
-			$icon = '<img src="images/last.png" height="'.$size.'" width="'.$size.'" alt="['.MSG00087.']" title="'.MSG00087.'">';
-			return $icon;
-  		break;
-  		case 'previous':
-			$icon = '<img src="images/previous.png" height="'.$size.'" width="'.$size.'" alt="['.MSG00088.']" title="'.MSG00088.'">';
-			return $icon;
-  		break;
-  		case 'next':
-			$icon = '<img src="images/next.png" height="'.$size.'" width="'.$size.'" alt="['.MSG00089.']" title="'.MSG00089.'">';
-			return $icon;
-  		break;
-  		case 'left':
-			$icon = '<img src="images/left.png" height="'.$size.'" width="'.$size.'" alt="'.MSG00090.'" title="'.MSG00090.'">';
-			return $icon;
-  		break;
-  		case 'right':
-			$icon = '<img src="images/right.png" height="'.$size.'" width="'.$size.'" alt="'.MSG00091.'" title="'.MSG00091.'">';
-			return $icon;
-  		break;
-
-		default:
-			$icon = '<img src="images/'.$action.'.png" height="'.$size.'" alt="'.niceName($action).'" title="'.niceName($action).'">';
-			return $icon;
-		}
-	}
-
 	function getTotalWebsites() {
 		$db = Database::obtain();
 		$sql = "SELECT `id` FROM `".TABLE_WEBSITES."`";
@@ -433,12 +359,6 @@ $db->connect();
 
 
 
-
-	function sysMsg($msg) {
-		$_SESSION['sysMsg'] = $msg;
-		echo '<font style="color:red; font-size:14px; font-weight:bold; text-align:center;">'.$msg.'</font><br>';
-	}
-
 	function scriptName() {
 		$script = $_SERVER["PHP_SELF"];
 		return substr( $script, 1 );
@@ -447,15 +367,6 @@ $db->connect();
 	function textLink($link,$label) {
 		$data = '<a id="textlink" href="'.$link.'" title="'.$label.'">'.$label.'</a>';
 		return $data;
-	}
-
-	function linkButton($link,$label) {
-		$button = '<span class="button-wrapper">';
-    	$button .= '<span class="button-l"> </span>';
-    	$button .= '<span class="button-r"> </span>';
-        $button .= '<a class="button" href="'.$link.'">'.$label.'</a>';
-		$button .= '</span>';
-		return $button;
 	}
 
 	function tableStyles() {
@@ -475,24 +386,6 @@ $db->connect();
 		}
 		</style>';
 		return $style;
-	}
-
-	function niceName($name) {
-		settype($name, "string");
-		$name[0] = strtoupper($name[0]);
-		$nsize = strlen($name);
-		$x = 0;
- 		while($x < $nsize) {
-			if($name[$x] == '_') {
-				$name[$x] = ' ';
-				$name[$x+1] = strtoupper($name[$x+1]);
-			} elseif(is_numeric($name[$x])) {
-
-			}
-			$x++;
- 		}
-		$name = substr($name,0,15);
-		return $name;
 	}
 
 ?>

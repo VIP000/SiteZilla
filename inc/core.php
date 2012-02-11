@@ -109,8 +109,26 @@
 		    case 'theme':
 					return 'default';
 		        break;
+			//The amount of templates and other items displayed per page
+		    case 'items_per_page':
+					return 20;
+		        break;
+			//Is JavaScript enabled? If JavaScript is disabled then help messages will not be shown
+		    case 'js_enabled':
+					if(isset($_SESSION['userid'])) {
+						if(isset($_SESSION['js_disabled'])) {
+							if(($_SESSION['js_disabled'] == 1) or (!help_enabled($_SESSION['userid'])))
+								return false;
+							else
+								return true;
+						} else {
+							return true;
+						}
+					} else
+						return false;
+		        break;
 		    default:
-					return 'UNKNOWN CONFIG OPTION';
+					return 'UNKNOWN CONFIG OPTION'; //translate('UNKNOWN CONFIG OPTION',sz_config('language'));
 		        break;
 		    
 		}
@@ -172,8 +190,32 @@
 		include_once(sz_config('base_path').DS.'themes'.DS.sz_config('theme').DS.'forms'.DS.$form.'.php');
 	}
 	
+	function help_icon($msg) {
+		$data = '<a href="#" rel="sztooltip"><img src="images/help.png" height="18px"></a><div class="sztooltip">'.$msg.'</div>';
+		if(sz_config('js_enabled'))
+			return $data;
+		else
+			return '';
+	}
 
 
 
+	function nice_name($name) {
+		settype($name, "string");
+		$name[0] = strtoupper($name[0]);
+		$nsize = strlen($name);
+		$x = 0;
+ 		while($x < $nsize) {
+			if($name[$x] == '_') {
+				$name[$x] = ' ';
+				$name[$x+1] = strtoupper($name[$x+1]);
+			} elseif(is_numeric($name[$x])) {
+
+			}
+			$x++;
+ 		}
+		$name = substr($name,0,15);
+		return $name;
+	}
 
 ?>

@@ -1,15 +1,52 @@
 <?php
 
 	function site_help() {
-		
+		$data = '
+			<script type="text/javascript" src="js/jquery-1.2.2.pack.js"></script>
+			<style type="text/css">
+				div.sztooltip{
+					position: absolute; /*leave this and next 3 values alone*/
+					z-index: 1000;
+					left: -1000px;
+					top: -1000px;
+					background: #272727;
+					border: 10px solid black;
+					color: white;
+					font-size:12px;
+					padding: 3px;
+					width: 250px; /*width of tooltip*/
+				}
+			</style>
+			<script type="text/javascript" src="js/sztooltip.js">
+
+			/***********************************************
+			* Inline HTML Tooltip script- by JavaScript Kit (http://www.javascriptkit.com)
+			* This notice must stay intact for usage
+			* Visit JavaScript Kit at http://www.javascriptkit.com/ for this script and 100s more
+			***********************************************/
+
+			</script>';
+		return $data;
 	}
 
 	function delete_script() {
-		
+		$data = '<script>
+					function confirmDelete(delUrl) {
+  						if (confirm("'.translate('Are you sure?',sz_config('language')).'")) {
+    						document.location = delUrl;
+  						}
+					}
+				</script>';
+		return $data;
 	}
 
 	function sort_script() {
-		
+		$data = "
+			<script type='text/javascript' src='js/common.js'></script>
+        	<script type='text/javascript' src='js/css.js'></script>
+        	<script type='text/javascript' src='js/standardista-table-sorting.js'></script>
+		";
+		return $data;
 	}
 
 	function sz_menu() {
@@ -32,7 +69,7 @@
 		}
 	}
 
-	//TODO The menu HTML should be pulled from the current website theme
+	//TODO The menu HTML should be pulled from the current SiteZilla theme
 	function full_menu() {
 		$siteid = 0;
 		if((isset($_SESSION['userid'])) && (is_numeric($_SESSION['userid']))) {
@@ -83,5 +120,90 @@
 			</div>';
 		echo $menu;
 	}
+
+	function link_button($link,$label) {
+		$button = '<span class="button-wrapper">';
+    	$button .= '<span class="button-l"> </span>';
+    	$button .= '<span class="button-r"> </span>';
+        $button .= '<a class="button" href="'.$link.'">'.$label.'</a>';
+		$button .= '</span>';
+		return $button;
+	}
+
+
+	function icon($action,$size = NULL,$alt = false) {
+		if($size == NULL) $size = '16px';
+		if(is_numeric($action)) {
+			settype($action,"string");
+			$icon = '';
+			if($alt == true) {
+				for($i=0;$i<strlen($action);$i++) {
+					$imgnum = substr($action,$i,1);
+					if($i == 0)
+						$options = 'alt="'.nice_name($action).'" title="'.nice_name($action).	'"';
+					else
+						$options = '';
+					$icon .= '<img src="images/'.$imgnum.'_alt.png" height="'.$size.'" '.$options.'>';
+				}
+			} else {
+				for($i=0;$i<strlen($action);$i++) {
+					$imgnum = substr($action,$i,1);
+					if($i == 0)
+						$options = 'alt="'.nice_name($action).'" title="'.nice_name($action).	'"';
+					else
+						$options = '';
+					$icon .= '<img src="images/'.$imgnum.'.png" height="'.$size.'" '.$options.'>';
+				}
+			}
+			return $icon;
+		} else
+		switch($action){
+		case 'space':
+			$icon = '<img src="images/space.png" height="'.$size.'" alt="&nbsp;">';
+			return $icon;
+		break;
+		case '.':
+			$icon = '<img src="images/point.png" height="'.$size.'"">';
+			return $icon;
+		break;
+  		case 'down':
+			$icon = '<img src="images/down.png" height="'.$size.'" width="'.$size.'" alt="'.translate('Down',sz_config('language')).'" title="'.translate('Down',sz_config('language')).'">';
+			return $icon;
+  		break;
+  		case 'up':
+			$icon = '<img src="images/up.png" height="'.$size.'" width="'.$size.'" alt="'.translate('Up',sz_config('language')).'" title="'.translate('Up',sz_config('language')).'">';
+			return $icon;
+  		break;
+  		case 'first':
+			$icon = '<img src="images/first.png" height="'.$size.'" width="'.$size.'" alt="['.translate('First',sz_config('language')).']" title="'.translate('First',sz_config('language')).'">';
+			return $icon;
+  		break;
+  		case 'last':
+			$icon = '<img src="images/last.png" height="'.$size.'" width="'.$size.'" alt="['.translate('Last',sz_config('language')).']" title="'.translate('Last',sz_config('language')).'">';
+			return $icon;
+  		break;
+  		case 'previous':
+			$icon = '<img src="images/previous.png" height="'.$size.'" width="'.$size.'" alt="['.translate('Previous',sz_config('language')).']" title="'.translate('Previous',sz_config('language')).'">';
+			return $icon;
+  		break;
+  		case 'next':
+			$icon = '<img src="images/next.png" height="'.$size.'" width="'.$size.'" alt="['.translate('Next',sz_config('language')).']" title="'.translate('Next',sz_config('language')).'">';
+			return $icon;
+  		break;
+  		case 'left':
+			$icon = '<img src="images/left.png" height="'.$size.'" width="'.$size.'" alt="'.translate('Left',sz_config('language')).'" title="'.translate('Left',sz_config('language')).'">';
+			return $icon;
+  		break;
+  		case 'right':
+			$icon = '<img src="images/right.png" height="'.$size.'" width="'.$size.'" alt="'.translate('Right',sz_config('language')).'" title="'.translate('Right',sz_config('language')).'">';
+			return $icon;
+  		break;
+
+		default:
+			$icon = '<img src="images/'.$action.'.png" height="'.$size.'" alt="'.nice_name($action).'" title="'.nice_name($action).'">';
+			return $icon;
+		}
+	}
+
 
 ?>

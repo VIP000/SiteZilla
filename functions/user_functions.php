@@ -451,18 +451,6 @@ The '.szName().' Team
 		$db->update(TABLE_USERS, $user, "id='".$db->escape($userid)."'");
 	}
 
-	function helpEnabled($userid) {
-		$db = Database::obtain();
-		$sql = "SELECT `showhelp` FROM ".TABLE_USERS."
-				WHERE `id` ='".$db->escape($userid)."'";
-		$row = $db->query_first($sql);
-		$data = $row['showhelp'];
-        if($data == 1)
-			return true;
-		else
-			return false;
-	}
-
 	function enableUserHelp($userid) {
 		$user['showhelp'] = 1;
 		$db = Database::obtain();

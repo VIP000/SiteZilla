@@ -131,6 +131,17 @@ class User {
 		return $users;
 	}
 
+	public function help_enabled($userid) {
+		$db = Database::obtain();
+		$sql = "SELECT `showhelp` FROM ".TABLE_USERS."
+				WHERE `id` ='".$db->escape($userid)."'";
+		$row = $db->query_first($sql);
+		$data = $row['showhelp'];
+        if($data == 1)
+			return true;
+		else
+			return false;
+	}
 
 
 
