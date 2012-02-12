@@ -1,5 +1,30 @@
 <?php
-
+// *************************************************************************
+// *                                                                       *
+// * SiteZilla - Web based Website Builder/Generator                       *
+// * Copyright (c) 2011 SiteZilla. All Rights Reserved,                    *
+// *                                                                       *
+// *************************************************************************
+// *                                                                       *
+// * Email: info@sitezilla.co.za                                           *
+// * Website: http://www.sitezilla.co.za/                                  *
+// *                                                                       *
+// *************************************************************************
+// *                                                                       *
+// * This program is free software: you can redistribute it and/or modify  *
+// * it under the terms of the GNU General Public License as published by  *
+// * the Free Software Foundation, either version 3 of the License, or     *
+// * (at your option) any later version.                                   *
+// *                                                                       *
+// * This program is distributed in the hope that it will be useful,       *
+// * but WITHOUT ANY WARRANTY; without even the implied warranty of        *
+// * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         *
+// * GNU General Public License for more details.                          *
+// *                                                                       *
+// * You should have received a copy of the GNU General Public License     *
+// * along with this program.  If not, see <http://www.gnu.org/licenses/>. *
+// *                                                                       *
+// *************************************************************************
 	function site_help() {
 		$data = '
 			<script type="text/javascript" src="js/jquery-1.2.2.pack.js"></script>
@@ -130,8 +155,8 @@
 		return $button;
 	}
 
-
 	function icon($action,$size = NULL,$alt = false) {
+		$img_folder = sz_config('url').'themes'.DS.sz_config('theme').DS.'images'.DS;
 		if($size == NULL) $size = '16px';
 		if(is_numeric($action)) {
 			settype($action,"string");
@@ -143,7 +168,7 @@
 						$options = 'alt="'.nice_name($action).'" title="'.nice_name($action).	'"';
 					else
 						$options = '';
-					$icon .= '<img src="images/'.$imgnum.'_alt.png" height="'.$size.'" '.$options.'>';
+					$icon .= '<img src="'.$img_folder.$imgnum.'_alt.png" height="'.$size.'" '.$options.'>';
 				}
 			} else {
 				for($i=0;$i<strlen($action);$i++) {
@@ -152,55 +177,55 @@
 						$options = 'alt="'.nice_name($action).'" title="'.nice_name($action).	'"';
 					else
 						$options = '';
-					$icon .= '<img src="images/'.$imgnum.'.png" height="'.$size.'" '.$options.'>';
+					$icon .= '<img src="'.$img_folder.$imgnum.'.png" height="'.$size.'" '.$options.'>';
 				}
 			}
 			return $icon;
 		} else
 		switch($action){
 		case 'space':
-			$icon = '<img src="images/space.png" height="'.$size.'" alt="&nbsp;">';
+			$icon = '<img src="'.$img_folder.'space.png" height="'.$size.'" alt="&nbsp;">';
 			return $icon;
 		break;
 		case '.':
-			$icon = '<img src="images/point.png" height="'.$size.'"">';
+			$icon = '<img src="'.$img_folder.'point.png" height="'.$size.'"">';
 			return $icon;
 		break;
   		case 'down':
-			$icon = '<img src="images/down.png" height="'.$size.'" width="'.$size.'" alt="'.translate('Down',sz_config('language')).'" title="'.translate('Down',sz_config('language')).'">';
+			$icon = '<img src="'.$img_folder.'down.png" height="'.$size.'" width="'.$size.'" alt="'.translate('Down',sz_config('language')).'" title="'.translate('Down',sz_config('language')).'">';
 			return $icon;
   		break;
   		case 'up':
-			$icon = '<img src="images/up.png" height="'.$size.'" width="'.$size.'" alt="'.translate('Up',sz_config('language')).'" title="'.translate('Up',sz_config('language')).'">';
+			$icon = '<img src="'.$img_folder.'up.png" height="'.$size.'" width="'.$size.'" alt="'.translate('Up',sz_config('language')).'" title="'.translate('Up',sz_config('language')).'">';
 			return $icon;
   		break;
   		case 'first':
-			$icon = '<img src="images/first.png" height="'.$size.'" width="'.$size.'" alt="['.translate('First',sz_config('language')).']" title="'.translate('First',sz_config('language')).'">';
+			$icon = '<img src="'.$img_folder.'first.png" height="'.$size.'" width="'.$size.'" alt="['.translate('First',sz_config('language')).']" title="'.translate('First',sz_config('language')).'">';
 			return $icon;
   		break;
   		case 'last':
-			$icon = '<img src="images/last.png" height="'.$size.'" width="'.$size.'" alt="['.translate('Last',sz_config('language')).']" title="'.translate('Last',sz_config('language')).'">';
+			$icon = '<img src="'.$img_folder.'last.png" height="'.$size.'" width="'.$size.'" alt="['.translate('Last',sz_config('language')).']" title="'.translate('Last',sz_config('language')).'">';
 			return $icon;
   		break;
   		case 'previous':
-			$icon = '<img src="images/previous.png" height="'.$size.'" width="'.$size.'" alt="['.translate('Previous',sz_config('language')).']" title="'.translate('Previous',sz_config('language')).'">';
+			$icon = '<img src="'.$img_folder.'previous.png" height="'.$size.'" width="'.$size.'" alt="['.translate('Previous',sz_config('language')).']" title="'.translate('Previous',sz_config('language')).'">';
 			return $icon;
   		break;
   		case 'next':
-			$icon = '<img src="images/next.png" height="'.$size.'" width="'.$size.'" alt="['.translate('Next',sz_config('language')).']" title="'.translate('Next',sz_config('language')).'">';
+			$icon = '<img src="'.$img_folder.'next.png" height="'.$size.'" width="'.$size.'" alt="['.translate('Next',sz_config('language')).']" title="'.translate('Next',sz_config('language')).'">';
 			return $icon;
   		break;
   		case 'left':
-			$icon = '<img src="images/left.png" height="'.$size.'" width="'.$size.'" alt="'.translate('Left',sz_config('language')).'" title="'.translate('Left',sz_config('language')).'">';
+			$icon = '<img src="'.$img_folder.'left.png" height="'.$size.'" width="'.$size.'" alt="'.translate('Left',sz_config('language')).'" title="'.translate('Left',sz_config('language')).'">';
 			return $icon;
   		break;
   		case 'right':
-			$icon = '<img src="images/right.png" height="'.$size.'" width="'.$size.'" alt="'.translate('Right',sz_config('language')).'" title="'.translate('Right',sz_config('language')).'">';
+			$icon = '<img src="'.$img_folder.'right.png" height="'.$size.'" width="'.$size.'" alt="'.translate('Right',sz_config('language')).'" title="'.translate('Right',sz_config('language')).'">';
 			return $icon;
   		break;
 
 		default:
-			$icon = '<img src="images/'.$action.'.png" height="'.$size.'" alt="'.nice_name($action).'" title="'.nice_name($action).'">';
+			$icon = '<img src="'.$img_folder.''.$action.'.png" height="'.$size.'" alt="'.nice_name($action).'" title="'.nice_name($action).'">';
 			return $icon;
 		}
 	}

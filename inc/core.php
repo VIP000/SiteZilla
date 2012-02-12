@@ -141,7 +141,8 @@
 		    case 'theme':
 					return 'default';
 		        break;
-			//Is debugging enabled in database.php? If so, enable debugging. 
+			//Is debugging enabled in database.php? If so, enable debugging.
+			//Edit database.php line 38 to disable debugging.
 		    case 'debug':
 					if(Database::$debug)
 						return true;
