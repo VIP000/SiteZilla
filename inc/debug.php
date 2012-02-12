@@ -1,7 +1,8 @@
 <?php
+
 // *************************************************************************
 // *                                                                       *
-// * SiteZilla - Creates small static websites                             *
+// * SiteZilla - Web based Website Builder/Generator                       *
 // * Copyright (c) 2011 SiteZilla. All Rights Reserved,                    *
 // *                                                                       *
 // *************************************************************************
@@ -26,19 +27,15 @@
 // *                                                                       *
 // *************************************************************************
 
-	function debugInfo() {
-		date_default_timezone_set('Africa/Johannesburg');
+if(sz_config('debug')) {
+	debug_info();
+} 
+
+	function debug_info() {
 		if(isset($_SESSION['website']))
 			$currsite = $_SESSION['website'];
 		else
 			$currsite = 0;
-		$av = getAdminValues();
-		$validation = '';
-		if(is_array($av)) {
-			foreach($av as $key => $value)
-				$validation .= '['.$key.']=['.$value.'],';
-		}
-// print_r($GLOBALS);
 		$gl = $_GET;
 		$globs = '';
 		if(is_array($gl)) {
@@ -71,13 +68,7 @@
 				<td style="vertical-align: top;" width="190px"><strong>BASE URL:</strong> </td><td>'.sz_config('base_path').'</td>
 			</tr>
 			<tr style="background-color:#D6D6D6;">
-				<td style="vertical-align: top;"><strong>IMAGE FOLDER:</strong> </td><td>'.imageFolder().'</td>
-			</tr>
-			<tr style="background-color:#A3A3A3;">
 				<td style="vertical-align: top;"><strong>CURRENT WEBSITE:</strong> </td><td>'.$currsite.'</td>
-			</tr>
-			<tr style="background-color:#D6D6D6;">
-				<td style="vertical-align: top;"><strong>VALIDATION:</strong> </td><td>'.$validation.'</td>
 			</tr>
 			<tr style="background-color:#A3A3A3;">
 				<td style="vertical-align: top;"><strong>_GET:</strong> </td><td>'.$get.'</td>
@@ -111,6 +102,7 @@
 			</tr>
 		</table>';
 	}
+
 
 
 ?>

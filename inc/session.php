@@ -8,13 +8,11 @@ class Session {
 
 	function __construct() {
 		session_start();
-// 		$this->check_session();
 	}
 
 	public function user_id() {
 		$this->check_session();
 		return $this->userid;
-		
 	}
 
 	public function is_logged_in() {

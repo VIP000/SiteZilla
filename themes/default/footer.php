@@ -30,6 +30,9 @@
     </div>
     <div id="footer" ><?php echo '<a href="'.sz_config('url').'">'.sz_config('name').'</a> '.sz_config('version').' Copyright &copy '.sz_config('year').' '.sz_config('company');?></div>
 </div>
- <?php /*include_once('functions/debug.php'); debugInfo();*/?>
+ <?php
+	if(file_exists(sz_config('base_path').'inc'.DS.'debug.php'))
+		include_once(sz_config('base_path').'inc'.DS.'debug.php');
+?>
 </body>
 </html>

@@ -1,7 +1,7 @@
 <?php
 // *************************************************************************
 // *                                                                       *
-// * SiteZilla - Creates small static websites                             *
+// * SiteZilla - Web based Website Builder/Generator                       *
 // * Copyright (c) 2011 SiteZilla. All Rights Reserved,                    *
 // *                                                                       *
 // *************************************************************************
@@ -47,7 +47,8 @@ if(isset($_POST['user']) && isset($_POST['pass'])){
 			show_msg('Invalid username or password!');
 			redirect_to('index.php?login');
 		} else {
-			redirect_to('profile.php');
+// 			redirect_to('profile.php');
+ 			redirect_to('index.php?templates');
 		}
   }
 

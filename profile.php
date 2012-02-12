@@ -25,11 +25,9 @@
 // * along with this program.  If not, see <http://www.gnu.org/licenses/>. *
 // *                                                                       *
 // *************************************************************************
-include_once('inc/session.php');
+include_once('inc/core.php');
 $userid = $session->user_id();
-include_once('functions/functions.php');
-include_once('admin_template/header.php');
-
+include_once('themes/'.sz_config('theme').'/header.php');
 
 //END SESSION CHECK
 $passw_changed = false;
@@ -100,9 +98,5 @@ if(isset($_GET['activate'])) {
 if(($showindex == true)  && ($userid <> 0)){
 	showUserInfo($userid);
 }
-
-//START FUNCTIONS
-echo $userid;
-
-if(!isset($_GET['preview']))  include_once('admin_template/footer.php');
+include_once('themes/'.sz_config('theme').'/footer.php');
 ?>
