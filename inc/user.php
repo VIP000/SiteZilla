@@ -14,7 +14,7 @@ class User {
 	private $password;
 	public $joined_date;
 	public $last_visit;
-	public $show_help = 1;
+	public $show_help = true;
 	public $language;
 
 	function __construct() {
@@ -111,11 +111,11 @@ class User {
 	}
 
 	public function disable_help() {
-		$this->show_help = 0;
+		$this->show_help = false;
 	}
 
 	public function enable_help() {
-		$this->show_help = 1;
+		$this->show_help = true;
 	}
 
 	public static function total_users() {
@@ -131,16 +131,13 @@ class User {
 		return $users;
 	}
 
-	public function help_enabled($userid) {
+	public static function help_enabled($userid) {
 		$db = Database::obtain();
 		$sql = "SELECT `showhelp` FROM ".TABLE_USERS."
 				WHERE `id` ='".$db->escape($userid)."'";
 		$row = $db->query_first($sql);
 		$data = $row['showhelp'];
-        if($data == 1)
-			return true;
-		else
-			return false;
+		return $data;
 	}
 
 

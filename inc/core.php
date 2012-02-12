@@ -34,20 +34,24 @@
 	//Check if website is offline
 	if($sz_status == false) {
 		include_once('themes'.DS.sz_config('theme').DS.'views'.DS.'offline.php');
-		$_SESSION = NULL;
-		if(isset($_SESSION))
-			session_destroy();
-		exit();
-}
+// 		$_SESSION = NULL;
+// 		if(isset($_SESSION))
+// 			session_destroy();
+// 		exit();
+	}
 
+	include_once(sz_config('base_path').DS.'inc'.DS.'dbconfig.php');
+	include_once(sz_config('base_path').DS.'inc'.DS.'database.php');
 	include_once(sz_config('base_path').DS.'inc'.DS.'session.php');
 	include_once(sz_config('base_path').DS.'inc'.DS.'language.php');
 	include_once(sz_config('base_path').DS.'inc'.DS.'user.php');
 	include_once(sz_config('base_path').DS.'inc'.DS.'web_elements.php');
 	include_once(sz_config('base_path').DS.'inc'.DS.'whmcs.php');
 	include_once(sz_config('base_path').DS.'inc'.DS.'template.php');
-	include_once(sz_config('base_path').DS.'inc'.DS.'dbconfig.php');
-	include_once(sz_config('base_path').DS.'inc'.DS.'database.php');
+
+	//Open a database connection. It is needed by all the functions using the database 
+	$db = Database::obtain(DB_SERVER, DB_USER, DB_PASS, DB_DATABASE);
+	$db->connect();
 
 	function redirect_to($location) {
 			header("Location: ".$location);
@@ -137,9 +141,12 @@
 		    case 'theme':
 					return 'default';
 		        break;
-			//Enable debugging? 
+			//Is debugging enabled in database.php? If so, enable debugging. 
 		    case 'debug':
-					return true;
+					if(Database::$debug)
+						return true;
+					else 
+						return false;
 		        break;
 			//The amount of templates and other items displayed per page
 		    case 'items_per_page':
@@ -149,7 +156,7 @@
 		    case 'js_enabled':
 					if(isset($_SESSION['userid'])) {
 						if(isset($_SESSION['js_disabled'])) {
-							if(($_SESSION['js_disabled'] == 1) or (!help_enabled($_SESSION['userid'])))
+							if(($_SESSION['js_disabled'] == 1) or (!User::help_enabled($_SESSION['userid'])))
 								return false;
 							else
 								return true;
@@ -219,18 +226,16 @@
 	    $users = User::total_users();
 		$websites = created_websites_total();
 		$templates = available_templates();
-		include_once(sz_config('base_path').DS.'themes'.DS.sz_config('theme').DS.'forms'.DS.$form.'.php');
+		include_once(sz_config('base_path').'themes'.DS.sz_config('theme').DS.'forms'.DS.$form.'.php');
 	}
 	
 	function help_icon($msg) {
-		$data = '<a href="#" rel="sztooltip"><img src="images/help.png" height="18px"></a><div class="sztooltip">'.$msg.'</div>';
-		if(sz_config('js_enabled'))
+		if(sz_config('js_enabled')) {
+			$data = '<a href="#" rel="sztooltip"><img src="'.sz_config('url').'themes'.DS.sz_config('theme').DS.'images'.DS.'help.png" height="18px"></a><div class="sztooltip">'.$msg.'</div>';
 			return $data;
-		else
+		} else
 			return '';
 	}
-
-
 
 	function nice_name($name) {
 		settype($name, "string");

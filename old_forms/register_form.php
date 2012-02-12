@@ -1,7 +1,7 @@
 <?php
 // *************************************************************************
 // *                                                                       *
-// * SiteZilla - Web based Website Builder/Generator                       *
+// * SiteZilla - Creates small static websites                             *
 // * Copyright (c) 2011 SiteZilla. All Rights Reserved,                    *
 // *                                                                       *
 // *************************************************************************
@@ -31,28 +31,57 @@
 		<td width="200px">
 			<?php include_once('pages/sidebar.php'); ?>
 		</td><td>
-<br><br>
 
-<form action="index.php" method="post">
-		<noscript>
-			<input name="js_disabled" type="hidden" value="1">
-		</noscript>
-		<table id="loginbox" border="0">
- 		<tr><td>
-   		<p>Username:</p><input type="text" name="user" value="" size="20" maxlength="20" />
-  		</td><td>
-   		<p>Password:</p><input type="password" name="pass" value="" size="20" maxlength="20" />
-  		</td></tr>
- 		<tr align="center">
-  		<td colspan="2" align="center"><font style="font-size:12px;">
-   		Forgot your password? <a href="index.php?resetpw">Click here..</a></font><input class="button" type="submit" value=" " />
-  		</td></tr><tr><td colspan="2" style="vertical-align:middle;"><font style="font-weight:bold;font-size:14px;color:#FFFFFF; padding: 0 10px 0;">Not registered yet? Register Now! </font><a href="index.php?register"><img src="themes/<?php echo sz_config('theme')?>/images/register_button.png" height="20px" width="80px"></a></td></tr>
-		</table>
+<?php sysMsg($msg);?>
+<br><br>
+<form action="index.php?user=register" method="post">
+<table width="300px" height="512px" id="registerbox" border="0">
+<tr><td>
+	<input type="hidden" name="account_active" value="0" />
+	<input type="hidden" name="referred_by" value="<?php echo $referrer; ?>" />
+</td></tr><tr><td>
+	<p>Username:</p>
+</td></tr><tr><td>
+		<input type="text" name="username" value="<?php echo $username; ?>"  size="25" maxlength="50" />
+</td></tr><tr><td>
+	<p>Full Names:</p>
+</td></tr><tr><td>
+		<input type="text" name="fullnames" value="<?php echo $fullnames; ?>" size="25" maxlength="255" />
+</td></tr><tr><td>
+	<p>Register as:</p>
+</td></tr><tr><td>
+		<select name="group"/>
+			<?php if($group == 3)
+					echo '<option value="3">Developer - (Free Demo)</option><option value="2">User - (Free Demo)</option>';
+				else
+					echo '<option value="2">User - (Free Demo)</option><option value="3">Developer - (Free Demo)</option>';
+			?>
+		</select>
+</td></tr><tr><td>
+	<p>Phone Number:</p>
+</td></tr><tr><td>
+		<input type="text" name="phone" value="<?php echo $phone; ?>" size="25" maxlength="15" />
+</td></tr><tr><td>
+	<p>Website:</p>
+</td></tr><tr><td>
+		<input type="text" name="user_website" value="<?php echo $user_website; ?>" size="25" maxlength="255" />
+</td></tr><tr><td>
+	<p>Email Address:</p>
+</td></tr><tr><td>
+		<input type="text" name="email" value="<?php echo $email; ?>" size="25" maxlength="255" />
+</td></tr><tr><td style="font-size:10px; font-weight:bold; text-align:center;">
+		<input type="checkbox" name="terms" value="1"> I accept the <a href="index.php?terms" target="_blank">Terms &amp; Conditions</a>
+</td></tr><tr><td>
+    	<input class="button" type="submit" value="">
+</td></tr>
+</table>
 </form>
 
-<br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br>
 
 
 </td></tr>
 </table>
+
+
+
+

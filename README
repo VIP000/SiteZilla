@@ -3,7 +3,7 @@ I'm busy sorting through the code and converting it to OO PHP. The new file stru
 
 ImageManager/ --> ckeditor's image manager
 ckeditor/ --> ckeditor
-content/ --> content uploaded but generated sites like custom images
+content/ --> content uploaded by generated sites like custom images
 inc/ --> SiteZilla functions and classes
 js/ --> all JavaScript used in SiteZilla
 pages/ --> all SiteZilla's page content like the index page

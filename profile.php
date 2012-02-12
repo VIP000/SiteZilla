@@ -1,7 +1,7 @@
 <?php
 // *************************************************************************
 // *                                                                       *
-// * SiteZilla - Creates small static websites                             *
+// * SiteZilla - Web based Website Builder/Generator                       *
 // * Copyright (c) 2011 SiteZilla. All Rights Reserved,                    *
 // *                                                                       *
 // *************************************************************************

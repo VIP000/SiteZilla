@@ -35,7 +35,7 @@
 class Database{
 
 	// debug flag for showing error messages
-	public	$debug = false;
+	public static $debug = true;
 
 	// Store the single instance of Database
 	private static $instance;
@@ -262,7 +262,7 @@ private function oops($msg=''){
 	}
 
 	// if no debug, done here
-	if(!$this->debug) return;
+	if(!self::$debug) return;
 	?>
 		<table align="center" border="1" cellspacing="0" style="background:white;color:black;width:80%;">
 		<tr><th colspan=2>Database Error</th></tr>

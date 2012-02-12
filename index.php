@@ -26,14 +26,10 @@
 // *                                                                       *
 // *************************************************************************
 //DO NOT MOVE THIS SECTION
-date_default_timezone_set('Africa/Johannesburg');
 if(isset($_GET['items_per_page']))
 	if(is_numeric($_GET['items_per_page']))
 		$_SESSION['items_per_page'] = $_GET['items_per_page'];
-
 include_once('inc/core.php');
-include_once('inc/template.php');
-// include_once('functions/functions.php');
 
 $nrgic = '';
 if(isset($_POST['registeration_remind'])) {
@@ -47,12 +43,11 @@ if(isset($_POST['user']) && isset($_POST['pass'])){
 			show_msg('Invalid username or password!');
 			redirect_to('index.php?login');
 		} else {
-// 			redirect_to('profile.php');
- 			redirect_to('index.php?templates');
+			redirect_to('profile.php');
 		}
   }
 
-include_once('functions/validation.php');
+include_once('old_functions/validation.php');
 $index_page = array();
 $index_page = getIndexValue();
 
