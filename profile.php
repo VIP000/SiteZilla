@@ -27,28 +27,28 @@
 // *************************************************************************
 include_once('inc/core.php');
 $userid = $session->user_id();
+$user = new User;
+$user->set_user_id($session->user_id());
 include_once('themes/'.sz_config('theme').'/header.php');
-
+error_reporting(-1);
 //END SESSION CHECK
+
 $passw_changed = false;
 $showindex = true;
-if(isset($_GET['activate'])) {
-	if(!isActive($userid))
-		activateAccount($userid);
-} elseif((isset($_GET['user'])) && ($_GET['user'] == 'save') && ($userid <> 0)) {
+if((isset($_GET['user'])) && ($_GET['user'] == 'save') && ($userid <> 0)) {
 		if (($_POST['id'] != '') && ($_POST['username'] != '') && ($_POST['fullnames'] != '') && ($_POST['phone'] != '') && ($_POST['email'] != '')) {
 			$savedetails = true;
 			//UpdateUser
 			$userdata = array();
-			$userdata['id'] = cleanPost($_POST['id']);
-			$userdata['username'] = cleanPost($_POST['username']);
-			$userdata['group'] = cleanPost($_POST['group']);
-			$userdata['account_active'] = cleanPost($_POST['account_active']);
-			$userdata['fullnames'] = cleanPost($_POST['fullnames']);
-			$userdata['phone'] = cleanPost($_POST['phone']);
-			$userdata['user_website'] = cleanPost($_POST['user_website']);
-			$userdata['email'] = cleanPost($_POST['email']);
-			$userdata['language'] = cleanPost($_POST['language']);
+			$userdata['id'] = clean_POST($_POST['id']);
+			$userdata['username'] = clean_POST($_POST['username']);
+			$userdata['group'] = clean_POST($_POST['group']);
+			$userdata['account_active'] = clean_POST($_POST['account_active']);
+			$userdata['fullnames'] = clean_POST($_POST['fullnames']);
+			$userdata['phone'] = clean_POST($_POST['phone']);
+			$userdata['user_website'] = clean_POST($_POST['user_website']);
+			$userdata['email'] = clean_POST($_POST['email']);
+			$userdata['language'] = clean_POST($_POST['language']);
 			$userdata['password'] = NULL;
 			//check if password was changed and update
 			if(($_POST['passw1'] != "") or ($_POST['passw2'] != "")) {
@@ -56,13 +56,13 @@ if(isset($_GET['activate'])) {
 					$savedetails = false;
 					$showindex = false;
 					$userdata['password'] = NULL;
-					sysMsg(MSG00182);
+					show_msg(translate('Your password must be at least six characters long.',sz_config('language')));
 					userForm($userdata);
 				} else {
-					$passw1 = cleanPost($_POST['passw1']);
-					$passw2 = cleanPost($_POST['passw2']);
+					$passw1 = clean_POST($_POST['passw1']);
+					$passw2 = clean_POST($_POST['passw2']);
 					if($passw1 == $passw2) {
-						$password = cleanPost($_POST['passw1']);
+						$password = clean_POST($_POST['passw1']);
 						$newuserpass = md5($password);
 						$userdata['password'] = $newuserpass;
 						$_SESSION['user'] = md5($newuserpass);
@@ -71,7 +71,7 @@ if(isset($_GET['activate'])) {
 						$savedetails = false;
 						$showindex = false;
 						$userdata['password'] = NULL;
-						sysMsg(MSG00181);
+						show_msg(translate('Your passwords do not match.',sz_config('language')));
 						userForm($userdata);
 					}
 				}
@@ -81,13 +81,13 @@ if(isset($_GET['activate'])) {
 				$showindex = true;
 			}
 		} else {
-			sysMsg(MSG00033);
+			show_msg(translate('You must provide the correct information when changing your details.',sz_config('language')));
 		}
 } elseif((isset($_GET['user'])) && ($_GET['user'] == 'hidehelp') && ($userid <> 0)) {
-	disableUserHelp($userid);
+	$user->disable_help();;
 	$showindex = true;
 } elseif((isset($_GET['user'])) && ($_GET['user'] == 'showhelp') && ($userid <> 0)) {
-	enableUserHelp($userid);
+	$user->enable_help();
 	$showindex = true;
 } elseif((isset($_GET['user'])) && ($_GET['user'] == 'edit') && ($userid <> 0)) {
 	$showindex = false;
@@ -96,7 +96,7 @@ if(isset($_GET['activate'])) {
 }
 
 if(($showindex == true)  && ($userid <> 0)){
-	showUserInfo($userid);
+	$user->display_profile();
 }
 include_once('themes/'.sz_config('theme').'/footer.php');
 ?>

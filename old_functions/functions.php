@@ -364,11 +364,6 @@ $db->connect();
 		return substr( $script, 1 );
 	}
 
-	function textLink($link,$label) {
-		$data = '<a id="textlink" href="'.$link.'" title="'.$label.'">'.$label.'</a>';
-		return $data;
-	}
-
 	function tableStyles() {
 		$style = '<STYLE> <!--
   		tr { background-color: #D6D6D6;}

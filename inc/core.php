@@ -40,14 +40,17 @@
 // 		exit();
 	}
 
-	include_once(sz_config('base_path').DS.'inc'.DS.'dbconfig.php');
-	include_once(sz_config('base_path').DS.'inc'.DS.'database.php');
-	include_once(sz_config('base_path').DS.'inc'.DS.'session.php');
-	include_once(sz_config('base_path').DS.'inc'.DS.'language.php');
-	include_once(sz_config('base_path').DS.'inc'.DS.'user.php');
-	include_once(sz_config('base_path').DS.'inc'.DS.'web_elements.php');
-	include_once(sz_config('base_path').DS.'inc'.DS.'whmcs.php');
-	include_once(sz_config('base_path').DS.'inc'.DS.'template.php');
+	$lib_path = sz_config('base_path').DS.'inc'.DS;
+
+	include_once($lib_path.'dbconfig.php');
+	include_once($lib_path.'database.php');
+	include_once($lib_path.'session.php');
+	include_once($lib_path.'validation.php');
+	include_once($lib_path.'language.php');
+	include_once($lib_path.'user.php');
+	include_once($lib_path.'web_elements.php');
+	include_once($lib_path.'whmcs.php');
+	include_once($lib_path.'template.php');
 
 	//Open a database connection. It is needed by all the functions using the database 
 	$db = Database::obtain(DB_SERVER, DB_USER, DB_PASS, DB_DATABASE);
@@ -229,14 +232,6 @@
 		$templates = available_templates();
 		include_once(sz_config('base_path').'themes'.DS.sz_config('theme').DS.'forms'.DS.$form.'.php');
 	}
-	
-	function help_icon($msg) {
-		if(sz_config('js_enabled')) {
-			$data = '<a href="#" rel="sztooltip"><img src="'.sz_config('url').'themes'.DS.sz_config('theme').DS.'images'.DS.'help.png" height="18px"></a><div class="sztooltip">'.$msg.'</div>';
-			return $data;
-		} else
-			return '';
-	}
 
 	function nice_name($name) {
 		settype($name, "string");
@@ -256,4 +251,8 @@
 		return $name;
 	}
 
+	function script_name() {
+		$script = $_SERVER["PHP_SELF"];
+		return substr( $script, 1 );
+	}
 ?>

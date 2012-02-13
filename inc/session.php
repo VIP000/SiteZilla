@@ -68,6 +68,10 @@ class Session {
 				//if the key is not the same then the current user is not from the same computer
 				//so log him out and destroy the session
 				$this->logout();
+			} else {
+
+				//Set the user id of the current user
+				$this->userid = $_SESSION['userid'];
 			}
 		} else {
 			//If there is no session then the user does not belong on the page he is trying to access so log him out
@@ -113,6 +117,7 @@ class Session {
 		//Redirect the user to the index page
 		redirect_to('../index.php');
 	}
+
 
 }
 

@@ -150,63 +150,6 @@ The '.szName().' Team
 		return false;
 	}
 
-	function getGroup($groupid) {
-		switch($groupid) {
-			case '1':
-				$group = MSG00162; //admin
-			break;
-			case '2':
-				$group = MSG00163; //user
-			break;
-			case '3':
-				$group = MSG00164; //dev
-			break;
-			default:
-				$group = MSG00163; //user
-		}
-		return $group;
-	}
-
-	function statusLogo($accstatus) {
-		switch($accstatus) {
-			case '0':
-				$status = icon('demo','22px');
-			break;
-			case '1':
-				$status = icon('active','22px');
-			break;
-			case '2':
-				$status = icon('warn','22px');
-			break;
-			case '3':
-				$status = icon('suspended','22px');
-			break;
-			default:
-				$status = icon('demo','22px');
-		}
-		return $status;
-	}
-
-	function getAccountStatus($accstatus) {
-		switch($accstatus) {
-			case '0':
-				$status = icon('demo','22px').' '.MSG00158; //demo
-			break;
-			case '1':
-				$status = icon('active','22px').' '.MSG00159; //Active
-			break;
-			case '2':
-				$status = icon('warn','22px').' '.MSG00160; //Last Warning
-			break;
-			case '3':
-				$status = icon('suspended','22px').' '.MSG00161; //Suspended
-			break;
-			default:
-				$status = icon('demo','22px').' '.MSG00158;
-		}
-		return $status;
-	}
-
 	function getUsersList($group, $start_record, $end_record) {
 		//$group = 0 shows all users
 		echo tableStyles().'<table width="100%" cellpadding="5px" cellspacing="0" border="0" style="margin-left:auto; margin-right:auto; background-color:#D6D6D6;">

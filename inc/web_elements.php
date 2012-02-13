@@ -25,6 +25,7 @@
 // * along with this program.  If not, see <http://www.gnu.org/licenses/>. *
 // *                                                                       *
 // *************************************************************************
+
 	function site_help() {
 		$data = '
 			<script type="text/javascript" src="js/jquery-1.2.2.pack.js"></script>
@@ -228,6 +229,39 @@
 			$icon = '<img src="'.$img_folder.''.$action.'.png" height="'.$size.'" alt="'.nice_name($action).'" title="'.nice_name($action).'">';
 			return $icon;
 		}
+	}
+
+	function status_logo($accstatus) {
+		switch($accstatus) {
+			case '0':
+				$status = icon('demo','22px');
+			break;
+			case '1':
+				$status = icon('active','22px');
+			break;
+			case '2':
+				$status = icon('warn','22px');
+			break;
+			case '3':
+				$status = icon('suspended','22px');
+			break;
+			default:
+				$status = icon('demo','22px');
+		}
+		return $status;
+	}
+
+	function help_icon($msg) {
+		if(sz_config('js_enabled')) {
+			$data = '<a href="#" rel="sztooltip"><img src="'.sz_config('url').'themes'.DS.sz_config('theme').DS.'images'.DS.'help.png" height="18px"></a><div class="sztooltip">'.$msg.'</div>';
+			return $data;
+		} else
+			return '';
+	}
+
+	function text_link($link,$label) {
+		$data = '<a id="textlink" href="'.$link.'" title="'.$label.'">'.$label.'</a>';
+		return $data;
 	}
 
 
