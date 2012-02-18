@@ -2,7 +2,7 @@
 BuildItems=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x01\x00\x00\x00\x0b\x00\x00\x00\x00\x01\x00\x00\x00\x12\x00S\x00i\x00t\x00e\x00Z\x00i\x00l\x00l\x00a)
 
 [Filters]
-Excludes=*~,.kate*,.temp_*,*/.kate*,*/.temp_*,*/*~,SiteZilla.kdev4,.kdev4/,.kdev4/SiteZilla.kdev4
+Excludes=*/placeholder,placeholder,*~,.kate*,.temp_*,*/.kate*,*/.temp_*,*/*~,SiteZilla.kdev4,.kdev4/,.kdev4/SiteZilla.kdev4
 
 [Launch]
 Launch Configurations=Launch Configuration 0
