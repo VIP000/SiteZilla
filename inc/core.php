@@ -41,26 +41,47 @@
 		exit();
 	}
 
+	//Set the default timezone.
+	//TODO The timezone should be set from the user's profile
 	date_default_timezone_set('Africa/Johannesburg');
 
+	//Define the directory separator so the app can run on other operating systems as well
+	//TODO I've never used PHP on Windows so if someone could fix what needs fixing to make using DS work it would be nice
 	defined('DS') ? null : define('DS', DIRECTORY_SEPARATOR);
 
-	PHP_VERSION;
+	//Setup the path to classes for SiteZilla
+	$lib_path = sz_config('base_path').DS.'inc'.DS;
 
+	//I prefer to take the site offline this way. It provides one ftp upload or other easier ways
+	//to automatically take the site offline should it be needed.
 	include_once(sz_config('base_path').DS.'status.php');
 	//Check if website is offline
 	if($sz_status == false) {
 		include_once('themes'.DS.sz_config('theme').DS.'views'.DS.'offline.php');
-// 		$_SESSION = NULL;
-// 		if(isset($_SESSION))
-// 			session_destroy();
-// 		exit();
+		exit();
 	}
 
-	$lib_path = sz_config('base_path').DS.'inc'.DS;
+	//Define Smarty Template System directory
+	define ('SMARTY_DIR',str_replace("\\","/",sz_config('base_path')).'smarty/');
 
+	//include the database class to check for debugging
 	include_once($lib_path.'dbconfig.php');
 	include_once($lib_path.'database.php');
+
+	//Setup Smarty and it's PATHS
+	require_once(SMARTY_DIR . 'Smarty.class.php');
+	$smarty = new Smarty();
+	$smarty->setTemplateDir(sz_config('base_path').'themes/');
+	$smarty->setCompileDir(sz_config('base_path').'themes_c/');
+	$smarty->setConfigDir(sz_config('base_path').'configs/');
+	$smarty->setCacheDir(sz_config('base_path').'cache/');
+
+	//Check if debugging is enabled and set Smarty's debugging accordingly
+	if(sz_config('debug'))
+		$smarty->debugging = true;
+	else 
+		$smarty->debugging = false;	
+
 	include_once($lib_path.'session.php');
 	include_once($lib_path.'validation.php');
 	include_once($lib_path.'language.php');
@@ -106,6 +127,7 @@
 			    break;
 			//The full file path where SiteZilla is located
 			case 'base_path':
+					//TODO This could be done automatically with getcwd() during the install
 					return '/home/scorpking/SiteZilla/SiteZilla/';
 			    break;
 			//Don't change this
