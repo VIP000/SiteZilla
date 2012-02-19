@@ -26,9 +26,26 @@
 // *                                                                       *
 // *************************************************************************
 
+	//Check if the PHP version is 5.2 or later
+	$php_version = phpversion();
+
+	//Get only the first 3 characters
+	$php_version = $php_version[0].$php_version[1].$php_version[2];
+
+	//Convert it to a float
+	settype($php_version,'float');
+
+	//If the version number is smaller than 5.2 stop the application because a lot of things won't work
+	if($php_version < 5.2) {
+		echo 'You need at least PHP v5.2 or later to run '.sz_config('name');
+		exit();
+	}
+
 	date_default_timezone_set('Africa/Johannesburg');
 
 	defined('DS') ? null : define('DS', DIRECTORY_SEPARATOR);
+
+	PHP_VERSION;
 
 	include_once(sz_config('base_path').DS.'status.php');
 	//Check if website is offline
